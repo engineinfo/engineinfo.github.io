@@ -1,0 +1,71 @@
+
+
+.data {
+  display:none;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+}
+
+th, td {
+  padding: 5px;
+}
+
+tr:hover {background-color: #9599a0; color:white;}
+
+th {
+  background-color: #ddd;
+
+}
+
+body{
+	min-height: 75rem;
+	padding-top: 70px;
+}
+
+.undersize_row
+{
+ display:none;
+ color:red;
+}
+
+.hide_row
+{
+ display:none;
+}
+
+.tableBullet
+{
+  padding-left:24px; /* image width plus any desired padding */
+  background:url(../images/bullet_red.png) center left no-repeat;
+}
+
+.card-body
+{
+	padding: 8px;
+}
+
+
+
+a:hover 
+{
+  text-decoration: underline;
+}
+
+.modal-header{
+     background-color:#ddd;
+}
+
+select {
+    border: 0;
+    width: 100%;
+}

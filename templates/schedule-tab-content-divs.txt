@@ -1,0 +1,4 @@
+    <div id="view{view}" style="padding:10px;">
+	<!--table-->
+    </div>
+    <!--tabview-->

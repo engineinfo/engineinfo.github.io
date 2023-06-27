@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <th width="33%">Engine</th>
+    <th colspan="2">{engine}</th>
+  </tr>
+<!--journal-->
+  <tr>
+    <td>Stroke</td>
+    <td>{stroke0}</td>
+    <td>{stroke1}</td>
+  </tr>
+  <tr>
+    <td>Counter Weight</td>
+    <td colspan="2">{weight}</td>
+
+  </tr>
+    <tr>
+    <td>Notes</td>
+    <td colspan="2"> <!--notes--></td>
+  </tr>
+
+</table>
+</br>
+<!--data-->

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+{head}
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="pressure-testing.html">Pressure Testing</a>
+  <a href="crankshafts.html">Crankshafts</a>
+  <a href="cylinder-heads.html">Cylinder Heads</a>
+</div>
+
+<div id="main">
+	<div class="topnav">
+	  <button class="openbtn" onclick="openNav()"><i class="fa fa-navicon"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tension Settings</button>
+	  <div style="height:5px"></div>
+
+		<!--select-menu-->
+
+	</div>
+	<div style="height:80px"></div>
+
+	<div>
+		<!--datatable-->
+	</div>
+
+</div>
+</body>
+</html>

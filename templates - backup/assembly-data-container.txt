@@ -1,0 +1,93 @@
+<ul class="tabs">
+    <li><a href="#{engineid}-1">General</a></li>
+	<li><a href="#{engineid}-2">Torque Settings</a></li>
+	<li><a href="#{engineid}-3">Sizes</a></li>
+	<li><a href="#{engineid}-4"><b>Checks</b></a></li>
+</ul>
+<div class="tabcontents">
+
+	<div id="{engineid}-1">
+		<table>
+			<tr>
+				<th width="33%">Engine</th>
+				<th colspan="2">{engine}</th>
+			</tr>
+			<tr>
+				<td>Pistion Protrusion</td>
+				<td>{ppf}</td>
+				<td>{ppt}</td>
+			</tr>
+			<tr>
+				<td>In Masking Height</td>
+				<td>{inmask0}</td>
+				<td>{inmask1}</td>
+			</tr>
+			<tr>
+				<td>Ex Masking Height</td>
+				<td>{exmask0}</td>
+				<td>{exmask1}</td>
+			</tr>
+			<tr>
+				<td>In Tappets</td>
+				<td>{intap0}</td>
+				<td>{intap1}</td>
+			</tr>
+			<tr>
+				<td>Ex Tappets</td>
+				<td>{extap0}</td>
+				<td>{extap1}</td>
+			</tr>
+			<tr>
+				<td><b>Notes</b></td>
+				<td colspan="2">{notes0}</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div  id="{engineid}-2">
+		<table>
+			<tr>
+				<th width="33%">Engine</th>
+				<th colspan="2">{engine}</th>
+			</tr>
+<!--torque-->
+
+			<tr>
+				<td><b>Notes</b></td>
+				<td colspn="2">{notes1}</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="{engineid}-3">
+		<table>
+			<tr>
+				<th width="33%">Engine</th>
+				<th colspan="2">{engine}</th>
+			</tr>
+			<tr>
+				<td><b>Crankshaft</b></td>
+				<td> </td>
+				<td> </td>
+			</tr>
+<!--journal-->
+		</table>
+	</div>
+	
+	<div id="{engineid}-4">	
+		<table>
+			<tr>
+				<th width="33%">Engine</th>
+				<th >{engine}</th>
+			</tr>
+			<!--checks-->
+			<tr><td colspan="2" class="tableBullet">Make sure oil squirter is installed for the vacuum pump.</td></tr>
+			<tr><td colspan="2" class="tableBullet">Check timing cover seal has not folded over when fitting over crankshaft.</td></tr>
+			<tr><td colspan="2" class="tableBullet">Crimp oil gallery plugs in the crankshaft when initially installing into the block.</td></tr>
+			<tr><td colspan="2" class="tableBullet">Check oul pump gear thickness are correct.</td></tr>
+			<tr><td colspan="2" class="tableBullet">Number one piston should be at bottom ded centre when timing the camshaft.</td></tr>
+		</table>
+	</div>
+</div>
+<br>
+<!--data-->

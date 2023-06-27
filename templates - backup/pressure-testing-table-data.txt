@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th width="33%">Engine</th>
+    <th>{engine}</th>
+  </tr>
+
+  <!--plate-->
+   <tr>
+    <td>Notes</td>
+    <td> <!--notes--></td>
+  </tr>
+
+</table>
+</br>
+<!--data-->

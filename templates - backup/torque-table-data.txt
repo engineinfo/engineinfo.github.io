@@ -1,0 +1,6 @@
+	<tr>
+		<td width="33%">&nbsp;&nbsp;{type}</td>
+		<td width="33%">{tension}</td>
+		<td colspan="2">{value0}</td>
+	</tr>
+	<!--torque-->

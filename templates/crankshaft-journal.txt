@@ -1,0 +1,21 @@
+<tr class="parent" id="row{rowid}">
+    <td width="33%">{journal}</td>
+    <td>{size0}</td>
+    <td>{size1}</td>
+  </tr>
+  <tr class="child-row{rowid}  undersize_row">
+    <td>.010 Under</td>
+    <td>{size2}</td>
+    <td>{size3}</td>
+  </tr>
+   <tr class="child-row{rowid} undersize_row">
+    <td>.020 Under</td>
+    <td>{size4}</td>
+    <td>{size5}</td>
+  </tr>
+  <tr class="child-row{rowid}  undersize_row">
+    <td>.030 Under</td>
+    <td>{size6}</td>
+    <td>{size7}</td>
+  </tr>
+<!--journal-->

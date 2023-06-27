@@ -1,0 +1,19 @@
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>{engine}</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+
+  <!--plate-->
+   <tr>
+    <td>Notes</td>
+    <td> <!--notes--></td>
+  </tr>
+
+</table>
+</div>
+</div>
+</br>
+<!--data-->

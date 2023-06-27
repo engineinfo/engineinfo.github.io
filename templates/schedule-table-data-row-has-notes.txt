@@ -1,0 +1,1 @@
+ class="tableBullet" onclick="location.href="#modal-{notenumber}" data-toggle="modal" data-target="#modal-{notenumber}"

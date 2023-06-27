@@ -1,0 +1,2 @@
+    <li><a href="#view{view}">{name}</a></li>
+<!--tab-->

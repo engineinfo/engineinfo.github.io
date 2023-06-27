@@ -1,0 +1,114 @@
+	<ul class="tabs">
+    <li><a href="#{engineid}-1">Heights</a></li>
+    <li><a href="#{engineid}-2">Clearances</a></li>
+</ul>
+<div class="tabcontents">
+    <div id="{engineid}-1">
+				<table>
+  <tr>
+    <th width="33%">Engine</th>
+    <th colspan="2">{engine}</th>
+  </tr>
+
+  <tr class="parent" id="row{rowid1}">
+	<td>Head Thickness</td>
+	<td>{thickness0}</td>
+	<td>{thickness1}</td>
+</tr>
+  <tr class="child-row{rowid1} undersize_row">
+	<td> </td>
+	<td>{thickness0*}</td>
+	<td>{thickness1*}</td>
+</tr>
+
+<tr class="parent" id="row{rowid2}">
+	<td>In Stem Height</td>
+	<td>{instem0}</td>
+	<td>{instem1}</td>
+</tr>
+
+<tr class="child-row{rowid2} undersize_row">
+	<td> </td>
+	<td>{instem0*}</td>
+	<td>{instem1*}</td>
+</tr>
+<tr class="parent" id="row{rowid3}">
+	<td>Ex Stem Height</td>
+	<td>{exstem0}</td>
+	<td>{exstem1}</td>
+</tr>
+<tr class="child-row{rowid3} undersize_row">
+	<td> </td>
+	<td>{exstem0*}</td>
+	<td>{exstem1*}</td>
+</tr>
+
+<tr class="parent" id="row{rowid4}">
+	<td>In Masking Height</td>
+	<td>{inmask0}</td>
+	<td>{inmask1}</td>
+</tr>
+<tr class="child-row{rowid4} undersize_row">
+	<td> </td>
+	<td>{inmask0*}</td>
+	<td>{inmask1*}</td>
+</tr>
+<tr class="parent" id="row{rowid5}">
+	<td>Ex Masking Height</td>
+	<td>{exmask0}</td>
+	<td>{exmask1}</td>
+</tr>
+<tr class="child-row{rowid5} undersize_row">
+	<td> </td>
+	<td>{exmask0*}</td>
+	<td>{exmask1*}</td>
+</tr>
+   <tr>
+    <td><b>Notes</b></td>
+    <td colspan="2">{notes0}</td>
+  </tr>
+
+</table>
+
+    </div>
+	
+    <div  id="{engineid}-2">
+	
+		<table>
+  <tr>
+    <th width="33%">Engine</th>
+    <th colspan="2">{engine}</th>
+  </tr>
+
+  <tr class="parent" id="row{rowid6}">
+	<td>In Tappets</td>
+	<td>{intap0}</td>
+	<td>{intap1}</td>
+</tr>
+  <tr class="child-row{rowid6} undersize_row">
+	<td> </td>
+	<td>{intap0*}</td>
+	<td>{intap1*}</td>
+</tr>
+
+  <tr class="parent" id="row{rowid7}">
+	<td>Ex Tappets</td>
+	<td>{extap0}</td>
+	<td>{extap1}</td>
+</tr>
+  <tr class="child-row{rowid7} undersize_row">
+	<td> </td>
+	<td>{extap0*}</td>
+	<td>{extap1*}</td>
+</tr>
+   <tr>
+    <td><b>Notes</b></td>
+    <td colspn="2">{notes1}</td>
+  </tr>
+
+</table>
+	
+    </div>
+</div>
+<br>
+<!--data-->

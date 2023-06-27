@@ -1,0 +1,11 @@
+		  <tr>
+			<td {hasnotes}>{jobnumber}</td>
+			<td>{component}</td>
+			<td>{location}</td>
+			<td>{description}</td>
+			<td>{customer}</td>
+			<td>{sales}</td>
+			<td>{date}</td>
+		  </tr>
+		<!--data-->
+		<!--modalnotes-->

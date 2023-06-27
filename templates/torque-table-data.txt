@@ -1,0 +1,5 @@
+	<tr>
+		<td>{tension}</td>
+		<td colspan="2">{value0}</td>
+	</tr>
+	<!--torque-->

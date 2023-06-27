@@ -1,0 +1,11 @@
+	<tr class="parent" id="row{rowid1}">
+		<td width="33%">&nbsp;&nbsp;{type}</td>
+		<td>{value0}</td>
+		<td>{value1}</td>
+	</tr>
+  	<tr class="child-row{rowid1} undersize_row">
+		<td> </td>
+		<td>{value0*}</td>
+		<td>{value1*}</td>
+	</tr>
+	<!--tunnel-->

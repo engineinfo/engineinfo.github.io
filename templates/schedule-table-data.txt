@@ -1,0 +1,12 @@
+		<table>
+		  <tr>
+			<th>Job Number</th>
+			<th>Component</th>
+			<th>Location</th>
+			<th>Description</th>
+			<th>Customer</th>
+			<th>Sales Person</th>
+			<th>Entry Date</th>
+		  </tr>
+		<!--data-->
+		</table>

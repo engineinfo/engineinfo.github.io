@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/jquery.selectric.min.js"></script>
+<link rel="stylesheet" href="css/selectric.css">
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+$(function() {
+	$('select').selectric({disableOnMobile: false, nativeOnMobile: false});
+});
+
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".data").not("." + optionValue).hide();
+                $("." + optionValue).show();
+	window.scrollTo(0, 0);
+            } else{
+                $(".data").hide();
+            }
+        });
+    }).change();
+	
+	$('tr.parent')  
+		.css("cursor", "pointer")  
+		.attr("title", "Click to expand/collapse")  
+		.click(function () {  
+			$(this).siblings('.child-' + this.id).toggle();  
+		});  
+    $('tr[@class^=child-]').hide().children('td');
+});
+</script>
+
+</head>
+<body>
+
+<div class="w3-top w3-green w3-container">
+  <div class="w3-bar w3-red" >
+  <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()"><i class="fa fa-navicon""></i></button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+		<a class="w3-bar-item w3-button href="schedule.html">Work Schedule</a>
+		<hr style="margin: 2px 0">
+		<a class="w3-bar-item w3-button href="assembly.html">Assembly</a>
+		<a class="w3-bar-item w3-button href="crankshafts.html">Crankshafts</a>
+		<a class="w3-bar-item w3-button href="cylinder-heads.html">Cylinder Heads</a>
+		<a class="w3-bar-item w3-button href="pressure-testing.html">Pressure Testing</a>
+		<a class="w3-bar-item w3-button href="conrods.html">Connecting Rods</a>
+		<a class="w3-bar-item w3-button href="main-tunnels.html">Main Tunnels</a>
+		<hr style="margin: 2px 0">
+		<a class="w3-bar-item w3-button href="crankshafts-full.html">Crankshafts - List</a>
+		<a class="w3-bar-item w3-button href="tension-settings-full.html">Torque Settings - List</a>
+		<hr style="margin: 2px 0">
+		<a class="w3-bar-item w3-button href="calculator.html">Calculator</a>
+      </div>
+	  
+  </div>
+  <div style="min-height: 5px;" class="w3-bar w3-orange"></div>
+  <div class="w3-bar w3-blue">
+<select style="width:100%" id="vehicleSelect">
+<option value="Daihatsu">Daihatsu</option>
+<option value="Ford">Ford</option>
+<option value="Holden">Holden</option>
+<option value="Hyundai">Hyundai</option>
+<option value="Isuzu">Isuzu</option>
+<option value="MasseyFerguson">Massey Ferguson</option>
+<option value="Mazda">Mazda</option>
+<option value="Mitsubishi">Mitsubishi</option>
+<option value="Nissan">Nissan</option>
+<option value="Rover">Rover</option>
+<option value="Subaru">Subaru</option>
+<option value="Toyota">Toyota</option>
+<!--option-->
+</select>
+	</div>
+</div>
+
+</body>
+</html>

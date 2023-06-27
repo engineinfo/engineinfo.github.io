@@ -1,0 +1,120 @@
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>{engine}</strong>
+	  </div>
+	  <div class="card-body">
+<ul class="tabs">
+    <li><a href="#{engineid}-1">General</a></li>
+	<li><a href="#{engineid}-2">Torque Settings</a></li>
+	<li><a href="#{engineid}-3">Sizes</a></li>
+	<li><a href="#{engineid}-4"><!--b{engineid}-->Checks<!--/b{engineid}--></a></li>
+</ul>
+<div class="tabcontents">
+
+	<div id="{engineid}-1">
+		<table>
+
+			<tr class="parent" id="row{rowid1}">
+				<td>Pistion Protrusion</td>
+				<td>{ppf}</td>
+				<td>{ppt}</td>
+			</tr>
+			<tr class="child-row{rowid1} undersize_row">
+				<td> </td>
+				<td>{ppf*}</td>
+				<td>{ppt*}</td>
+			</tr>
+
+			<tr class="parent" id="row{rowid6}">
+				<td>Pistion To Bore</td>
+				<td>{pbf}</td>
+				<td>{pbt}</td>
+			</tr>
+			<tr class="child-row{rowid6} undersize_row">
+				<td> </td>
+				<td>{pbf*}</td>
+				<td>{pbt*}</td>
+			</tr>
+
+			<tr class="parent" id="row{rowid2}">
+				<td>In Masking Height</td>
+				<td>{inmask0}</td>
+				<td>{inmask1}</td>
+			</tr>
+			<tr class="child-row{rowid2} undersize_row">
+				<td> </td>
+				<td>{inmask0*}</td>
+				<td>{inmask1*}</td>
+			</tr>
+
+			<tr class="parent" id="row{rowid3}">
+				<td>Ex Masking Height</td>
+				<td>{exmask0}</td>
+				<td>{exmask1}</td>
+			</tr>
+			<tr class="child-row{rowid3} undersize_row">
+				<td> </td>
+				<td>{exmask0*}</td>
+				<td>{exmask1*}</td>
+			</tr>
+
+			<tr class="parent" id="row{rowid4}">
+				<td>In Tappets</td>
+				<td>{intap0}</td>
+				<td>{intap1}</td>
+			</tr>
+			<tr class="child-row{rowid4} undersize_row">
+				<td> </td>
+				<td>{intap0*}</td>
+				<td>{intap1*}</td>
+			</tr>
+
+			<tr class="parent" id="row{rowid5}">
+				<td>Ex Tappets</td>
+				<td>{extap0}</td>
+				<td>{extap1}</td>
+			</tr>
+			<tr class="child-row{rowid5} undersize_row">
+				<td> </td>
+				<td>{extap0*}</td>
+				<td>{extap1*}</td>
+			</tr>
+
+			<tr>
+				<td><b>Notes</b></td>
+				<td colspan="2">{notes0}</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div  id="{engineid}-2">
+		<table>
+<!--torque-->
+
+			<tr>
+				<td><b>Notes</b></td>
+				<td colspan="2">{notes1}</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="{engineid}-3">
+<table>
+			<tr>
+				<th colspan ="3" >Crankshaft</td>
+
+			</tr>
+<!--crankshaft-->
+</table>
+	</div>
+	
+	<div id="{engineid}-4">	
+		<table>
+			<!--checks-->
+		</table>
+	</div>
+</div>
+</div>
+</div>
+<br>
+<!--data-->

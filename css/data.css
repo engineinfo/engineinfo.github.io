@@ -1,0 +1,68 @@
+
+
+h1
+{
+    font: 'Verdana';
+}
+
+.li
+{
+    font: 18px;
+    color: #696969;
+    list-style: disc outside;
+    margin-bottom: 10px;
+}
+
+#acc 
+{
+	margin: 0px; 
+	padding: 0px; 
+	font: 12px Verdana,Arial;
+	width:100%; 
+	list-style:none; 
+	color:#033; 
+
+}
+
+#acc li
+{
+	padding: 3px;
+	width: 100%;
+}
+
+#acc h3 
+{
+	font:12px Verdana,Arial;
+	width:100%; 
+	border:1px solid #9ac1c9; 
+	padding:6px 6px 8px; 
+	margin-top:5px;
+	margin-bottom:5px;
+	cursor:pointer; 
+}
+
+
+#acc h3:hover 
+{
+	font:12px Verdana,Arial;
+}
+
+
+#acc .acc-section 
+{
+	margin-top:5px; 
+	overflow:hidden; 
+	background:#fff
+}
+
+#acc .acc-content 
+{
+	margin-top:5px; 
+	padding:2px; 
+	background:#fff
+}
+
+@media screen and (max-width: 601px) 
+{
+
+}

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/sendit.css">
+	<link href="css/tabcontent.css?id=123" rel="stylesheet" type="text/css" />
+	<script src="scripts/tabcontent.js" type="text/javascript"></script>
+	<title>North Vic Engines</title>
+
+<script>
+
+function TorqueConverter(source,valNum) {
+  valNum = parseFloat(valNum);
+
+  if (source=="inputNm") {
+    inputFtLbs.value=(valNum/1.356).toFixed(0);
+  }
+  if (source=="inputFtLbs") {
+    inputNm.value=(valNum*1.356).toFixed(0);
+  }
+}
+
+function lengthConverter(source,valNum) {
+  valNum = parseFloat(valNum);
+
+  if (source=="inputMm") {
+    inputIn.value=(valNum/25.4).toFixed(4);
+  }
+  if (source=="inputIn") {
+    inputMm.value=(valNum*25.4).toFixed(3);
+  }
+}
+
+function compRatio(form)
+{
+	var pi = 3.1415927;
+
+	<!--swept volume-->
+	var vBore = parseFloat(form.bore.value);
+	var vStroke = parseFloat(form.stroke.value);
+	var vSweptVolume = vBore * 2.54 * vBore * 2.54 * vStroke * 2.54 * pi / 4;
+	<!--end swept volume-->
+
+	<!--clearance volume-->
+	var vClearanceVolume = 0;
+	var vCompRatio = 0;
+	var vGasketDiameter = parseFloat(form.gasketDiameter.value);
+	var vGasketThickness = parseFloat(form.gasketThickness.value);
+	var vGasketVolume = vGasketDiameter * 2.54 * vGasketDiameter * 2.54 * vGasketThickness * 2.54 * pi / 4;
+	var vChamberVolume = parseFloat(form.chamber.value);
+	var vPistonVolume = parseFloat(form.pistonVolume.value);
+	var vRingHeight = parseFloat(form.ringHeight.value);
+	var vDeckHeight = parseFloat(form.deckHeight.value);
+	var vCrownDiameter = vBore - 0.038;
+	var vRingLandVolume = vBore * 2.54 * vBore * 2.54 * vRingHeight * 2.54 * pi / 4 - vCrownDiameter * 2.54 * vCrownDiameter * 2.54 * vRingHeight * 2.54 * pi / 4;
+	var vDeckHeightVolume = vBore * 2.54 * vBore * 2.54 * vDeckHeight * 2.54 * pi / 4;
+
+	vClearanceVolume = vGasketVolume + vPistonVolume + vRingLandVolume + vChamberVolume + vDeckHeightVolume;
+	vCompRatio = (vClearanceVolume + vSweptVolume) / vClearanceVolume;
+	<!--end clearance volume-->
+
+	<!--return values-->
+	form.compRatioValue.value = vCompRatio.toFixed(2);
+}
+</script>
+
+</head>
+
+<body>
+
+	<nav class="navbar fixed-top navbar-lite bg-white"">
+		<div class="dropdown">
+			<button class="btn btn-secondary fa fa-bars" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20"></button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="assembly.html">Assembly</a>
+				<a class="dropdown-item" href="crankshafts.html">Crankshafts</a>
+				<a class="dropdown-item"href="cylinder-heads.html">Cylinder Heads</a>
+				<a class="dropdown-item" href="pressure-testing.html">Pressure Testing</a>
+				<a class="dropdown-item" href="conrods.html">Connecting Rods</a>
+				<a class="dropdown-item" href="main-tunnels.html">Main Tunnels</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="crankshafts-full.html">Crankshafts - List</a>
+				<a class="dropdown-item" href="tension-settings-full.html">Torque Settings - List</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="calculator.html">Calculator</a>
+			</div>
+		</div>
+		
+		<h1 class="navbar-brand">Calculator</h1>
+		
+		<!--select-menu-->
+	</nav>
+<main role="main" class="container-fluid">
+
+<ul class="tabs">
+    <li><a href="#view1">Nm - Ft/Lbs</a></li>
+    <li><a href="#view2">mm - in</a></li>
+	<li><a href="#view3">Compression Ratio</a></li>
+</ul>
+<div class="tabcontents">
+    <div id="view1" style="padding:10px;">
+		
+		<div>
+			<label>Newton Meters</label><br>
+			<input id="inputNm" class="w3-input w3-border" type="number" placeholder="Nm" oninput="TorqueConverter(this.id,this.value)" onchange="TorqueConverter(this.id,this.value)">
+		</div>
+		<br>
+		<div>
+			<label>Foot Pounds</label><br>
+			<input id="inputFtLbs" class="w3-input w3-border" type="number" placeholder="Ft/Lbs" oninput="TorqueConverter(this.id,this.value)" onchange="TorqueConverter(this.id,this.value)">
+		</div>
+	
+    </div>
+	
+    <div id="view2" style="padding:10px;">
+	
+		<div>
+			<label>Millimeters</label><br>
+			<input id="inputMm" class="w3-input w3-border" type="number" placeholder="mm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+		</div>
+		<br>
+		<div>
+			<label>Inches</label><br>
+			<input id="inputIn" class="w3-input w3-border" type="number" placeholder="in" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+		</div>
+	
+    </div>
+	<div id="view3" style="padding:10px;">
+	<form>
+		<div>
+			<label>Bore Diameter</label><br>
+			<input id="bore" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Stroke</label><br>
+			<input id="stroke" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Combustion Chamber Volume</label><br>
+			<input id="chamber" class="w3-input w3-border" type="number" placeholder="Input (CC's)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Piston Deck Height</label><br>
+			<input id="deckHeight" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Piston Volume</label><br>
+			<input id="pistonVolume" class="w3-input w3-border" type="number" placeholder="Input (- Dome) volume (CC's)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Head Gasket Diameter</label><br>
+			<input id="gasketDiameter" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Head Gasket Thickness</label><br>
+			<input id="gasketThickness" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Top Ring Height</label><br>
+			<input id="ringHeight" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		
+		<div>
+			<label>Compression Ratio</label><br>
+			<input id="compRatioValue" class="w3-input w3-border w3-text-red" type="text" disabled> <label> : 1</label>
+		</div>
+	</form>
+	</div>
+</div>
+
+</main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	
+</body>
+</html>

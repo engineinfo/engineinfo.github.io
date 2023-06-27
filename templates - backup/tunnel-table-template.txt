@@ -1,0 +1,34 @@
+<ul class="tabs">
+    <li><a href="#{engineid}-1">Tunnel Size</a></li>
+    <li><a href="#{engineid}-2">Torque Settings</a></li>
+</ul>
+<div class="tabcontents">
+    <div id="{engineid}-1">
+
+<table>
+	<tr>
+		<th width="33%">Engine</th>
+		<th colspan="2">{engine}</th>
+	</tr>
+	
+<!--tunnel-->
+</table>
+    </div>
+	
+    <div  id="{engineid}-2">
+<table>
+
+	<tr>
+		<th width="33%">Engine</th>
+		<th colspan="2">{engine}</th>
+	</tr>
+<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2"> <!--notes--></td>
+	</tr>
+</table>
+    </div>
+</div>
+<br>
+<!--data-->
