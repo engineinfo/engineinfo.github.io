@@ -1,46 +1,49 @@
 
 
-.data {
+.data 
+{
   display:none;
 }
 
-table, td, th {  
+table, td, th 
+{  
   border: 1px solid #ddd;
   text-align: left;
   font-size: 14px;
 }
 
-table {
+table 
+{
   border-collapse: collapse;
   width: 100%;
   background-color: white;
 }
 
-th, td {
+h6
+{
+	font-weight: Bold;
+	padding: 6px;
+	background-color: #ddd;
+}
+th, td 
+{
   padding: 5px;
 }
 
-tr:hover {background-color: #9599a0; color:white;}
-
-th {
-  background-color: #ddd;
-
+tr:hover 
+{
+	background-color: #f2f2f2;
 }
 
-body{
-	min-height: 75rem;
-	padding-top: 70px;
+th 
+{
+  background-color: #ddd;
 }
 
 .undersize_row
 {
  display:none;
  color:red;
-}
-
-.hide_row
-{
- display:none;
 }
 
 .tableBullet
@@ -54,18 +57,41 @@ body{
 	padding: 8px;
 }
 
-
-
 a:hover 
 {
   text-decoration: underline;
 }
 
-.modal-header{
-     background-color:#ddd;
+.center 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
-select {
-    border: 0;
+.undersize_td
+{
+	background: url(../images/bullet_arrow_down.png) no-repeat right center;
+}
+
+.header-with-line 
+{
+    position: relative;
+    overflow: hidden;
+    font-style: italic;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+	
+}
+.header-with-line:after 
+{
+    content: "";
+    position: absolute;
     width: 100%;
+    top: 50%;
+    margin-left: 10px;
+    border-top: 1px solid #259BC8;
 }
