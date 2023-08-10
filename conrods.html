@@ -2,8 +2,9 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<!--extrametta-->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,6 +19,8 @@
 		<div class="dropdown">
 			<button class="btn btn-secondary fa fa-bars" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20"></button>
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="schedule.html">Work Schedule</a>
+				<div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="assembly.html">Assembly</a>
 				<a class="dropdown-item" href="crankshafts.html">Crankshafts</a>
 				<a class="dropdown-item"href="cylinder-heads.html">Cylinder Heads</a>
@@ -25,7 +28,7 @@
 				<a class="dropdown-item" href="conrods.html">Connecting Rods</a>
 				<a class="dropdown-item" href="main-tunnels.html">Main Tunnels</a>
 				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="crankshafts-full.html">Crankshafts - List</a>
+				<a class="dropdown-item" href="full-crankshaft-list.html">Crankshafts - List</a>
 				<a class="dropdown-item" href="tension-settings-full.html">Torque Settings - List</a>
 				<div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="calculator.html">Calculator</a>
@@ -37,16 +40,18 @@
 		<select class="form-control form-control-sm">
 <option value="Daihatsu">Daihatsu</option>
 <option value="Ford">Ford</option>
-<option value="Hino">Hino</option>
+<option value="GreatWall">Great Wall</option>
 <option value="Holden">Holden</option>
 <option value="Hyundai">Hyundai</option>
 <option value="Isuzu">Isuzu</option>
-<option value="MasseyFerguson">Massey Ferguson</option>
+<option value="Jeep">Jeep</option>
 <option value="Mazda">Mazda</option>
+<option value="MercedesBenz">Mercedes Benz</option>
 <option value="Mitsubishi">Mitsubishi</option>
 <option value="Nissan">Nissan</option>
 <option value="Rover">Rover</option>
 <option value="Subaru">Subaru</option>
+<option value="Suzuki">Suzuki</option>
 <option value="Toyota">Toyota</option>
 <!--option-->
 </select>
@@ -56,41 +61,6 @@
 		<div id="0" class="Daihatsu data">
 	</br>
 		<div class="card shadow">
-	  <div class="card-header bg-success text-light">
-		<strong>1KDF-TV</strong>
-	  </div>
-	  <div class="card-body">
-
-<table>
-	<tr>
-		<th colspan="3">Tunnel Size</th>
-	</tr>
-	
-<!--tunnel-->
-</table>
-
-<br>
-
-<table>
-
-	<tr>
-		<th colspan="3">Torque Setting</th>
-	</tr>
-	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2">Refer OEM manual</td>
-	</tr>
-	<!--torque-->
-	<tr>
-		<td>Notes</td>
-		<td colspan="2"> </td>
-	</tr>
-</table>
-</div>
-</div>
-<br>
-	<div class="card shadow">
 	  <div class="card-header bg-success text-light">
 		<strong>HDE HDF HDEP</strong>
 	  </div>
@@ -102,7 +72,7 @@
 	</tr>
 	
 	<tr class="parent" id="row0">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8898 in</td>
 		<td>1.8906 in</td>
 	</tr>
@@ -142,7 +112,7 @@
 	</tr>
 	
 	<tr class="parent" id="row1">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.9693 in</td>
 		<td>1.9693 in</td>
 	</tr>
@@ -162,9 +132,12 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2">Refer OEM manual</td>
+		<td>Step 1</td>
+		<td colspan="2">25 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">+ 90</td>
 	</tr>
 	<!--torque-->
 	<tr>
@@ -191,7 +164,7 @@
 	</tr>
 	
 	<tr class="parent" id="row2">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2390 in</td>
 		<td>2.2398 in</td>
 	</tr>
@@ -211,13 +184,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2">19-24 ft lbs</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
+		<td></td>
 		<td colspan="2">26-32 Nm</td>
 	</tr>
 	<!--torque-->
@@ -241,7 +208,7 @@
 	</tr>
 	
 	<tr class="parent" id="row3">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2390 in</td>
 		<td>2.2398 in</td>
 	</tr>
@@ -261,13 +228,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">26 ft lbs</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
+		<td></td>
 		<td colspan="2">35 Nm</td>
 	</tr>
 	<!--torque-->
@@ -291,21 +256,11 @@
 	</tr>
 	
 	<tr class="parent" id="row4">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2390 in</td>
 		<td>2.2398 in</td>
 	</tr>
   	<tr class="child-row4 undersize_row">
-		<td> </td>
-		<td>56.87 mm</td>
-		<td>56.89 mm</td>
-	</tr>
-		<tr class="parent" id="row5">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td>2.2390 in</td>
-		<td>2.2398 in</td>
-	</tr>
-  	<tr class="child-row5 undersize_row">
 		<td> </td>
 		<td>56.87 mm</td>
 		<td>56.89 mm</td>
@@ -321,13 +276,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2">26 ft lbs</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
+		<td></td>
 		<td colspan="2">35 Nm</td>
 	</tr>
 	<!--torque-->
@@ -350,12 +299,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row6">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row5">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.4361 in</td>
 		<td>2.4369 in</td>
 	</tr>
-  	<tr class="child-row6 undersize_row">
+  	<tr class="child-row5 undersize_row">
 		<td> </td>
 		<td>61.88 mm</td>
 		<td>61.90 mm</td>
@@ -371,19 +320,69 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td></td>
 		<td colspan="2">40-45 ft lbs</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
-		<td colspan="2">54-61 Nm</td>
 	</tr>
 	<!--torque-->
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>302 Windsor</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+	<tr class="parent" id="row6">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>2.2390 in</td>
+		<td>2.2398 in</td>
+	</tr>
+  	<tr class="child-row6 undersize_row">
+		<td> </td>
+		<td>56.87 mm</td>
+		<td>56.89 mm</td>
+	</tr>
+	<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td>5/16 Nut</td>
+		<td colspan="2">19-24 ft lbs</td>
+	</tr>
+		<tr>
+		<td></td>
+		<td colspan="2">26-32 Nm</td>
+	</tr>
+		<tr>
+		<td>3/8 Nut</td>
+		<td colspan="2">40-45 ft lbs</td>
+	</tr>
+		<tr>
+		<td></td>
+		<td colspan="2">54-61 Nm</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2">  </td>
 	</tr>
 </table>
 </div>
@@ -401,7 +400,7 @@
 	</tr>
 	
 	<tr class="parent" id="row7">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.4361 in</td>
 		<td>2.4369 in</td>
 	</tr>
@@ -421,14 +420,8 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td></td>
 		<td colspan="2">40-45 ft lbs</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
-		<td colspan="2">54-61 Nm</td>
 	</tr>
 	<!--torque-->
 	<tr>
@@ -451,7 +444,7 @@
 	</tr>
 	
 	<tr class="parent" id="row8">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2390 in</td>
 		<td>2.2398 in</td>
 	</tr>
@@ -471,13 +464,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2">26 ft lbs</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
+		<td></td>
 		<td colspan="2">35 Nm</td>
 	</tr>
 	<!--torque-->
@@ -501,7 +488,7 @@
 	</tr>
 	
 	<tr class="parent" id="row9">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2390 in</td>
 		<td>2.2398 in</td>
 	</tr>
@@ -521,13 +508,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">26 ft lbs</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
+		<td></td>
 		<td colspan="2">35 Nm</td>
 	</tr>
 	<!--torque-->
@@ -551,7 +536,7 @@
 	</tr>
 	
 	<tr class="parent" id="row10">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.5002 in</td>
 		<td>2.5008 in</td>
 	</tr>
@@ -571,18 +556,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">56 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">69 Nm</td>
 	</tr>
 	<!--torque-->
@@ -606,7 +584,7 @@
 	</tr>
 	
 	<tr class="parent" id="row11">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2390 in</td>
 		<td>2.2400 in</td>
 	</tr>
@@ -626,18 +604,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">30-33 ft lbs</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90-120</td>
 	</tr>
 	<!--torque-->
@@ -661,7 +632,7 @@
 	</tr>
 	
 	<tr class="parent" id="row12">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2390 in</td>
 		<td>2.2400 in</td>
 	</tr>
@@ -681,18 +652,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">30-33 ft lbs</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90-120</td>
 	</tr>
 	<!--torque-->
@@ -726,18 +690,15 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
+		<td></td>
 		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
+		<td></td>
 		<td colspan="2">60 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
+		<td></td>
 		<td colspan="2">+ 90</td>
 	</tr>
 	<!--torque-->
@@ -761,7 +722,7 @@
 	</tr>
 	
 	<tr class="parent" id="row13">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1261 in</td>
 		<td>2.1267 in</td>
 	</tr>
@@ -781,8 +742,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">65-69 Nm</td>
 	</tr>
 	<!--torque-->
@@ -806,7 +766,7 @@
 	</tr>
 	
 	<tr class="parent" id="row14">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1261 in</td>
 		<td>2.1267 in</td>
 	</tr>
@@ -826,8 +786,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td></td>
 		<td colspan="2">50-55 Nm</td>
 	</tr>
 	<!--torque-->
@@ -851,7 +810,7 @@
 	</tr>
 	
 	<tr class="parent" id="row15">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1261 in</td>
 		<td>2.1267 in</td>
 	</tr>
@@ -870,12 +829,7 @@
 	<tr>
 		<th colspan="3">Torque Setting</th>
 	</tr>
-	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2">65-69 Nm</td>
-	</tr>
-	<!--torque-->
+<!--torque-->
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
@@ -896,7 +850,7 @@
 	</tr>
 	
 	<tr class="parent" id="row16">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2046 in</td>
 		<td>2.2054 in</td>
 	</tr>
@@ -916,21 +870,48 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
+		<td></td>
+		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
-		<td colspan="2">30 Nm</td>
+		<td></td>
+		<td colspan="2">60 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
-		<td colspan="2">100 Nm</td>
+		<td></td>
+		<td colspan="2">+ 90</td>
 	</tr>
 	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2"> </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>P4AT</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+<!--torque-->
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
@@ -961,18 +942,15 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
+		<td></td>
 		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
+		<td></td>
 		<td colspan="2">60 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
+		<td></td>
 		<td colspan="2">+ 90</td>
 	</tr>
 	<!--torque-->
@@ -994,7 +972,7 @@
 	</br>
 		<div class="card shadow">
 	  <div class="card-header bg-success text-light">
-		<strong>202 Red</strong>
+		<strong>132 - 138 Grey</strong>
 	  </div>
 	  <div class="card-body">
 
@@ -1004,11 +982,55 @@
 	</tr>
 	
 	<tr class="parent" id="row17">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>1.8745 in</td>
+		<td>1.8750 in</td>
+	</tr>
+  	<tr class="child-row17 undersize_row">
+		<td> </td>
+		<td>47.61 mm</td>
+		<td>47.63 mm</td>
+	</tr>
+	<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">41-47 Nm</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2"> </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>202 Red</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+	<tr class="parent" id="row18">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0247 in</td>
 		<td>2.0252 in</td>
 	</tr>
-  	<tr class="child-row17 undersize_row">
+  	<tr class="child-row18 undersize_row">
 		<td> </td>
 		<td>51.43 mm</td>
 		<td>51.44 mm</td>
@@ -1024,13 +1046,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods (small bolt)</td>
+		<td>Conrods (small bolt)</td>
 		<td colspan="2">20-26 ft lbs</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods (large bolt)</td>
+		<td>Conrods (large bolt)</td>
 		<td colspan="2">30-35 ft lbs</td>
 	</tr>
 	<!--torque-->
@@ -1053,12 +1073,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row18">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row19">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2497 in</td>
 		<td>2.2502 in</td>
 	</tr>
-  	<tr class="child-row18 undersize_row">
+  	<tr class="child-row19 undersize_row">
 		<td> </td>
 		<td>57.14 mm</td>
 		<td>57.16 mm</td>
@@ -1074,59 +1094,12 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">30-35 ft lbs</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%"></td>
+		<td></td>
 		<td colspan="2">41-48 Nm</td>
-	</tr>
-	<!--torque-->
-	<tr>
-		<td>Notes</td>
-		<td colspan="2"> </td>
-	</tr>
-</table>
-</div>
-</div>
-<br>
-	<div class="card shadow">
-	  <div class="card-header bg-success text-light">
-		<strong>4JJ1-TC</strong>
-	  </div>
-	  <div class="card-body">
-
-<table>
-	<tr>
-		<th colspan="3">Tunnel Size</th>
-	</tr>
-	
-	<tr class="parent" id="row19">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td>2.2047 in</td>
-		<td>2.2053 in</td>
-	</tr>
-  	<tr class="child-row19 undersize_row">
-		<td> </td>
-		<td>56.00 mm</td>
-		<td>56.02 mm</td>
-	</tr>
-	<!--tunnel-->
-</table>
-
-<br>
-
-<table>
-
-	<tr>
-		<th colspan="3">Torque Setting</th>
-	</tr>
-	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
 	<tr>
@@ -1149,7 +1122,7 @@
 	</tr>
 	
 	<tr class="parent" id="row20">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0467 in</td>
 		<td>2.0474 in</td>
 	</tr>
@@ -1169,8 +1142,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">59 Nm</td>
 	</tr>
 	<!--torque-->
@@ -1194,7 +1166,7 @@
 	</tr>
 	
 	<tr class="parent" id="row21">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2434 in</td>
 		<td>2.2441 in</td>
 	</tr>
@@ -1214,8 +1186,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">54 Nm</td>
 	</tr>
 	<!--torque-->
@@ -1249,8 +1220,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">54 Nm</td>
 	</tr>
 	<!--torque-->
@@ -1284,8 +1254,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM Manual</td>
 	</tr>
 	<!--torque-->
@@ -1339,7 +1308,7 @@
 	</tr>
 	
 	<tr class="parent" id="row22">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8110 in</td>
 		<td>1.8115 in</td>
 	</tr>
@@ -1359,24 +1328,12 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  30</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
-		<td colspan="2"></td>
 	</tr>
 	<!--torque-->
 	<tr>
@@ -1399,7 +1356,7 @@
 	</tr>
 	
 	<tr class="parent" id="row23">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0472 in</td>
 		<td>2.0477 in</td>
 	</tr>
@@ -1419,23 +1376,15 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">35 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  45</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
+		<td>Step 3</td>
 		<td colspan="2">+  15</td>
 	</tr>
 	<!--torque-->
@@ -1459,7 +1408,7 @@
 	</tr>
 	
 	<tr class="parent" id="row24">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0472 in</td>
 		<td>2.0477 in</td>
 	</tr>
@@ -1479,18 +1428,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">35 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -1514,7 +1456,7 @@
 	</tr>
 	
 	<tr class="parent" id="row25">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0472 in</td>
 		<td>2.0477 in</td>
 	</tr>
@@ -1534,23 +1476,15 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">35 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  45</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
+		<td>Step 3</td>
 		<td colspan="2">+  15</td>
 	</tr>
 	<!--torque-->
@@ -1574,7 +1508,7 @@
 	</tr>
 	
 	<tr class="parent" id="row26">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0472 in</td>
 		<td>2.0477 in</td>
 	</tr>
@@ -1594,8 +1528,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -1629,8 +1562,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -1664,8 +1596,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -1689,7 +1620,7 @@
 	</tr>
 	
 	<tr class="parent" id="row27">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2247 in</td>
 		<td>2.2252 in</td>
 	</tr>
@@ -1709,18 +1640,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">20 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  60</td>
 	</tr>
 	<!--torque-->
@@ -1774,7 +1698,7 @@
 	</tr>
 	
 	<tr class="parent" id="row28">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.3472 in</td>
 		<td>2.3479 in</td>
 	</tr>
@@ -1874,7 +1798,7 @@
 	</tr>
 	
 	<tr class="parent" id="row29">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2247 in</td>
 		<td>2.2252 in</td>
 	</tr>
@@ -1894,18 +1818,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">20 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  60</td>
 	</tr>
 	<!--torque-->
@@ -1939,18 +1856,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">20 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  60</td>
 	</tr>
 	<!--torque-->
@@ -1987,6 +1897,54 @@
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>LWN</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+	<tr class="parent" id="row30">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>2.2665 in</td>
+		<td>2.2668 in</td>
+	</tr>
+  	<tr class="child-row30 undersize_row">
+		<td> </td>
+		<td>57.57 mm</td>
+		<td>57.58 mm</td>
+	</tr>
+	<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td>Step 1</td>
+		<td colspan="2">30 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">+ 40</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2">  </td>
 	</tr>
 </table>
 </div>
@@ -2063,12 +2021,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row30">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row31">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8110 in</td>
 		<td>1.8115 in</td>
 	</tr>
-  	<tr class="child-row30 undersize_row">
+  	<tr class="child-row31 undersize_row">
 		<td> </td>
 		<td>46.00 mm</td>
 		<td>46.01 mm</td>
@@ -2084,23 +2042,15 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1 (15mm bolts only)</td>
+		<td>Step 1 (15mm bolts only)</td>
 		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2 (40mm bolts only)</td>
+		<td>Step 2 (40mm bolts only)</td>
 		<td colspan="2">35 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3 (all bolts)</td>
+		<td>Step 3 (all bolts)</td>
 		<td colspan="2">+  30</td>
 	</tr>
 	<!--torque-->
@@ -2123,12 +2073,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row31">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row32">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8110 in</td>
 		<td>1.8115 in</td>
 	</tr>
-  	<tr class="child-row31 undersize_row">
+  	<tr class="child-row32 undersize_row">
 		<td> </td>
 		<td>46.00 mm</td>
 		<td>46.01 mm</td>
@@ -2144,23 +2094,15 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">35 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  45</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
+		<td>Step 3</td>
 		<td colspan="2">+  15</td>
 	</tr>
 	<!--torque-->
@@ -2183,12 +2125,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row32">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row33">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0472 in</td>
 		<td>2.0477 in</td>
 	</tr>
-  	<tr class="child-row32 undersize_row">
+  	<tr class="child-row33 undersize_row">
 		<td> </td>
 		<td>52.00 mm</td>
 		<td>52.01 mm</td>
@@ -2204,23 +2146,15 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">35 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  45</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
+		<td>Step 3</td>
 		<td colspan="2">+  15</td>
 	</tr>
 	<!--torque-->
@@ -2243,12 +2177,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row33">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row34">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8110 in</td>
 		<td>1.8115 in</td>
 	</tr>
-  	<tr class="child-row33 undersize_row">
+  	<tr class="child-row34 undersize_row">
 		<td> </td>
 		<td>46.00 mm</td>
 		<td>46.01 mm</td>
@@ -2264,8 +2198,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM Manual</td>
 	</tr>
 	<!--torque-->
@@ -2288,12 +2221,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row34">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row35">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8110 in</td>
 		<td>1.8115 in</td>
 	</tr>
-  	<tr class="child-row34 undersize_row">
+  	<tr class="child-row35 undersize_row">
 		<td> </td>
 		<td>46.00 mm</td>
 		<td>46.01 mm</td>
@@ -2328,12 +2261,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row35">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row36">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8110 in</td>
 		<td>1.8115 in</td>
 	</tr>
-  	<tr class="child-row35 undersize_row">
+  	<tr class="child-row36 undersize_row">
 		<td> </td>
 		<td>46.00 mm</td>
 		<td>46.01 mm</td>
@@ -2349,8 +2282,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -2384,8 +2316,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -2408,12 +2339,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row36">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row37">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0519 in</td>
 		<td>2.0525 in</td>
 	</tr>
-  	<tr class="child-row36 undersize_row">
+  	<tr class="child-row37 undersize_row">
 		<td> </td>
 		<td>52.12 mm</td>
 		<td>52.13 mm</td>
@@ -2429,8 +2360,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM Manual</td>
 	</tr>
 	<!--torque-->
@@ -2468,8 +2398,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -2533,18 +2462,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">13 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -2578,8 +2500,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OE manual</td>
 	</tr>
 	<!--torque-->
@@ -2613,8 +2534,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OE manual</td>
 	</tr>
 	<!--torque-->
@@ -2637,12 +2557,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row37">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row38">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8898 in</td>
 		<td>1.8906 in</td>
 	</tr>
-  	<tr class="child-row37 undersize_row">
+  	<tr class="child-row38 undersize_row">
 		<td> </td>
 		<td>48.00 mm</td>
 		<td>48.02 mm</td>
@@ -2658,8 +2578,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -2693,8 +2612,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -2717,12 +2635,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row38">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row39">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8899 in</td>
 		<td>1.8904 in</td>
 	</tr>
-  	<tr class="child-row38 undersize_row">
+  	<tr class="child-row39 undersize_row">
 		<td> </td>
 		<td>48.00 mm</td>
 		<td>48.02 mm</td>
@@ -2738,8 +2656,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -2803,8 +2720,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OE manual</td>
 	</tr>
 	<!--torque-->
@@ -2838,43 +2754,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2">Refer OE manual</td>
-	</tr>
-	<!--torque-->
-	<tr>
-		<td>Notes</td>
-		<td colspan="2"> </td>
-	</tr>
-</table>
-</div>
-</div>
-<br>
-	<div class="card shadow">
-	  <div class="card-header bg-success text-light">
-		<strong>G4KG</strong>
-	  </div>
-	  <div class="card-body">
-
-<table>
-	<tr>
-		<th colspan="3">Tunnel Size</th>
-	</tr>
-	
-<!--tunnel-->
-</table>
-
-<br>
-
-<table>
-
-	<tr>
-		<th colspan="3">Torque Setting</th>
-	</tr>
-	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OE manual</td>
 	</tr>
 	<!--torque-->
@@ -2908,8 +2788,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OE manual</td>
 	</tr>
 	<!--torque-->
@@ -2942,7 +2821,15 @@
 	<tr>
 		<th colspan="3">Torque Setting</th>
 	</tr>
-<!--torque-->
+	<tr>
+		<td>Step 1</td>
+		<td colspan="2">21 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">+ 90</td>
+	</tr>
+	<!--torque-->
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
@@ -2972,7 +2859,15 @@
 	<tr>
 		<th colspan="3">Torque Setting</th>
 	</tr>
-<!--torque-->
+	<tr>
+		<td>Step 1</td>
+		<td colspan="2">21 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">+ 90</td>
+	</tr>
+	<!--torque-->
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
@@ -3003,13 +2898,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">16-20 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90-94</td>
 	</tr>
 	<!--torque-->
@@ -3032,12 +2925,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row39">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row40">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2835 in</td>
 		<td>2.2842 in</td>
 	</tr>
-  	<tr class="child-row39 undersize_row">
+  	<tr class="child-row40 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -3053,8 +2946,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">50-53 Nm</td>
 	</tr>
 	<!--torque-->
@@ -3148,13 +3040,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">20 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+ 90</td>
 	</tr>
 	<!--torque-->
@@ -3181,12 +3071,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row40">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row41">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.7553 in</td>
 		<td>2.7559 in</td>
 	</tr>
-  	<tr class="child-row40 undersize_row">
+  	<tr class="child-row41 undersize_row">
 		<td> </td>
 		<td>69.99 mm</td>
 		<td>70.00 mm</td>
@@ -3202,23 +3092,15 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">39 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+ 60°</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
+		<td>Step 3</td>
 		<td colspan="2">+ 45°</td>
 	</tr>
 	<!--torque-->
@@ -3241,12 +3123,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row41">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row42">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.7553 in</td>
 		<td>2.7559 in</td>
 	</tr>
-  	<tr class="child-row41 undersize_row">
+  	<tr class="child-row42 undersize_row">
 		<td> </td>
 		<td>69.99 mm</td>
 		<td>70.00 mm</td>
@@ -3262,23 +3144,15 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">1st Step</td>
+		<td>1st Step</td>
 		<td colspan="2">39Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">2nd Step</td>
+		<td>2nd Step</td>
 		<td colspan="2">+  60</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">3rd Step</td>
+		<td>3rd Step</td>
 		<td colspan="2">+  30</td>
 	</tr>
 	<!--torque-->
@@ -3301,12 +3175,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row42">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row43">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.7553 in</td>
 		<td>2.7559 in</td>
 	</tr>
-  	<tr class="child-row42 undersize_row">
+  	<tr class="child-row43 undersize_row">
 		<td> </td>
 		<td>69.99 mm</td>
 		<td>70.00 mm</td>
@@ -3322,23 +3196,15 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">1st Step</td>
+		<td>1st Step</td>
 		<td colspan="2">39Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">2nd Step</td>
+		<td>2nd Step</td>
 		<td colspan="2">+  60</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">3rd Step</td>
+		<td>3rd Step</td>
 		<td colspan="2">+  30</td>
 	</tr>
 	<!--torque-->
@@ -3361,12 +3227,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row43">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row44">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>3.0703 in</td>
 		<td>3.0711 in</td>
 	</tr>
-  	<tr class="child-row43 undersize_row">
+  	<tr class="child-row44 undersize_row">
 		<td> </td>
 		<td>77.99 mm</td>
 		<td>78.01 mm</td>
@@ -3382,23 +3248,15 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">39Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  60</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
+		<td>Step 3</td>
 		<td colspan="2">+  30</td>
 	</tr>
 	<!--torque-->
@@ -3421,12 +3279,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row44">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row45">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2047 in</td>
 		<td>2.2053 in</td>
 	</tr>
-  	<tr class="child-row44 undersize_row">
+  	<tr class="child-row45 undersize_row">
 		<td> </td>
 		<td>56.00 mm</td>
 		<td>56.02 mm</td>
@@ -3442,8 +3300,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">83 Nm</td>
 	</tr>
 	<!--torque-->
@@ -3466,12 +3323,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row45">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row46">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2047 in</td>
 		<td>2.2053 in</td>
 	</tr>
-  	<tr class="child-row45 undersize_row">
+  	<tr class="child-row46 undersize_row">
 		<td> </td>
 		<td>56.00 mm</td>
 		<td>56.02 mm</td>
@@ -3487,19 +3344,60 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">29 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  45-60</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2"> </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>4JJ1-TC</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+	<tr class="parent" id="row47">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>2.2047 in</td>
+		<td>2.2053 in</td>
+	</tr>
+  	<tr class="child-row47 undersize_row">
+		<td> </td>
+		<td>56.00 mm</td>
+		<td>56.02 mm</td>
+	</tr>
+	<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td>Step 1</td>
+		<td colspan="2">29 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">+ 45</td>
 	</tr>
 	<!--torque-->
 	<tr>
@@ -3529,12 +3427,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row46">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row48">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1259 in</td>
 		<td>2.1267 in</td>
 	</tr>
-  	<tr class="child-row46 undersize_row">
+  	<tr class="child-row48 undersize_row">
 		<td> </td>
 		<td>54.00 mm</td>
 		<td>54.02 mm</td>
@@ -3550,8 +3448,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td></td>
 		<td colspan="2">65-69 Nm</td>
 	</tr>
 	<!--torque-->
@@ -3574,12 +3471,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row47">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row49">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0876 in</td>
 		<td>2.0884 in</td>
 	</tr>
-  	<tr class="child-row47 undersize_row">
+  	<tr class="child-row49 undersize_row">
 		<td> </td>
 		<td>53.03 mm</td>
 		<td>53.05 mm</td>
@@ -3595,8 +3492,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -3630,8 +3526,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -3695,41 +3590,10 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
-	<tr>
-		<td>Notes</td>
-		<td colspan="2"> </td>
-	</tr>
-</table>
-</div>
-</div>
-<br>
-	<div class="card shadow">
-	  <div class="card-header bg-success text-light">
-		<strong>P4AT</strong>
-	  </div>
-	  <div class="card-body">
-
-<table>
-	<tr>
-		<th colspan="3">Tunnel Size</th>
-	</tr>
-	
-<!--tunnel-->
-</table>
-
-<br>
-
-<table>
-
-	<tr>
-		<th colspan="3">Torque Setting</th>
-	</tr>
-<!--torque-->
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
@@ -3760,14 +3624,51 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>R2 16 valve</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td>Step 1</td>
+		<td colspan="2">26 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">+ 90</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2">  </td>
 	</tr>
 </table>
 </div>
@@ -3795,8 +3696,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -3819,12 +3719,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row48">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row50">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.5522 in</td>
 		<td>2.5530 in</td>
 	</tr>
-  	<tr class="child-row48 undersize_row">
+  	<tr class="child-row50 undersize_row">
 		<td> </td>
 		<td>64.83 mm</td>
 		<td>64.85 mm</td>
@@ -3840,8 +3740,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">80-90 Nm</td>
 	</tr>
 	<!--torque-->
@@ -3864,12 +3763,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row49">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row51">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.6811 in</td>
 		<td>2.6811 in</td>
 	</tr>
-  	<tr class="child-row49 undersize_row">
+  	<tr class="child-row51 undersize_row">
 		<td> </td>
 		<td>68.10 mm</td>
 		<td>68.10 mm</td>
@@ -3885,8 +3784,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -3909,12 +3807,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row50">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row52">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.6811 in</td>
 		<td>2.6811 in</td>
 	</tr>
-  	<tr class="child-row50 undersize_row">
+  	<tr class="child-row52 undersize_row">
 		<td> </td>
 		<td>68.10 mm</td>
 		<td>68.10 mm</td>
@@ -3930,18 +3828,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">34 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+ 90°</td>
 	</tr>
 	<!--torque-->
@@ -3955,137 +3846,7 @@
 <br>
 	<div class="card shadow">
 	  <div class="card-header bg-success text-light">
-		<strong>WEAT WEC</strong>
-	  </div>
-	  <div class="card-body">
-
-<table>
-	<tr>
-		<th colspan="3">Tunnel Size</th>
-	</tr>
-	
-	<tr class="parent" id="row51">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td>2.3630 in</td>
-		<td>2.3630 in</td>
-	</tr>
-  	<tr class="child-row51 undersize_row">
-		<td> </td>
-		<td>60.02 mm</td>
-		<td>60.02 mm</td>
-	</tr>
-	<!--tunnel-->
-</table>
-
-<br>
-
-<table>
-
-	<tr>
-		<th colspan="3">Torque Setting</th>
-	</tr>
-	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
-		<td colspan="2">36.5 Nm</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
-		<td colspan="2">46.5 Nm</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
-		<td colspan="2">51.5 Nm</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 4</td>
-		<td colspan="2">+  97</td>
-	</tr>
-	<!--torque-->
-	<tr>
-		<td>Notes</td>
-		<td colspan="2"> </td>
-	</tr>
-</table>
-</div>
-</div>
-<br>
-	<div class="card shadow">
-	  <div class="card-header bg-success text-light">
-		<strong>WEC</strong>
-	  </div>
-	  <div class="card-body">
-
-<table>
-	<tr>
-		<th colspan="3">Tunnel Size</th>
-	</tr>
-	
-	<tr class="parent" id="row52">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td>2.3630 in</td>
-		<td>2.3630 in</td>
-	</tr>
-  	<tr class="child-row52 undersize_row">
-		<td> </td>
-		<td>60.02 mm</td>
-		<td>60.02 mm</td>
-	</tr>
-	<!--tunnel-->
-</table>
-
-<br>
-
-<table>
-
-	<tr>
-		<th colspan="3">Torque Setting</th>
-	</tr>
-	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
-		<td colspan="2">36.5 Nm</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
-		<td colspan="2">46.5 Nm</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
-		<td colspan="2">51.5 Nm</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 4</td>
-		<td colspan="2">+  97</td>
-	</tr>
-	<!--torque-->
-	<tr>
-		<td>Notes</td>
-		<td colspan="2"> </td>
-	</tr>
-</table>
-</div>
-</div>
-<br>
-	<div class="card shadow">
-	  <div class="card-header bg-success text-light">
-		<strong>WL</strong>
+		<strong>WEAT WEC 16 Valve D.O.H.C</strong>
 	  </div>
 	  <div class="card-body">
 
@@ -4095,14 +3856,14 @@
 	</tr>
 	
 	<tr class="parent" id="row53">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td>2.2843 in</td>
-		<td>2.2843 in</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>2.3630 in</td>
+		<td>2.3630 in</td>
 	</tr>
   	<tr class="child-row53 undersize_row">
 		<td> </td>
-		<td>58.02 mm</td>
-		<td>58.02 mm</td>
+		<td>60.02 mm</td>
+		<td>60.02 mm</td>
 	</tr>
 	<!--tunnel-->
 </table>
@@ -4115,19 +3876,20 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
+		<td>Step 1</td>
+		<td colspan="2">36.5 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
-		<td colspan="2">30 Nm</td>
+		<td>Step 2</td>
+		<td colspan="2">46.5 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
-		<td colspan="2">+  90</td>
+		<td>Step 3</td>
+		<td colspan="2">51.5 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 4</td>
+		<td colspan="2">+  97</td>
 	</tr>
 	<!--torque-->
 	<tr>
@@ -4140,7 +3902,7 @@
 <br>
 	<div class="card shadow">
 	  <div class="card-header bg-success text-light">
-		<strong>WLAT Turbo</strong>
+		<strong>WL 12 Valve S.O.H.C</strong>
 	  </div>
 	  <div class="card-body">
 
@@ -4150,7 +3912,7 @@
 	</tr>
 	
 	<tr class="parent" id="row54">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2843 in</td>
 		<td>2.2843 in</td>
 	</tr>
@@ -4170,18 +3932,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">30 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -4195,7 +3950,7 @@
 <br>
 	<div class="card shadow">
 	  <div class="card-header bg-success text-light">
-		<strong>WLAT WLC</strong>
+		<strong>WLAT WLC 16 Valve D.O.H.C</strong>
 	  </div>
 	  <div class="card-body">
 
@@ -4215,28 +3970,19 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">36.5 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">46.5 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
+		<td>Step 3</td>
 		<td colspan="2">51.5 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 4</td>
+		<td>Step 4</td>
 		<td colspan="2">+  97</td>
 	</tr>
 	<!--torque-->
@@ -4260,7 +4006,7 @@
 	</tr>
 	
 	<tr class="parent" id="row55">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8896 in</td>
 		<td>1.8904 in</td>
 	</tr>
@@ -4280,8 +4026,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">48-50 Nm</td>
 	</tr>
 	<!--torque-->
@@ -4315,8 +4060,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -4334,7 +4078,7 @@
 	</br>
 		<div class="card shadow">
 	  <div class="card-header bg-success text-light">
-		<strong>4D56 Di-T Turbo (Triton RWD only)</strong>
+		<strong>4D56 Di-T</strong>
 	  </div>
 	  <div class="card-body">
 
@@ -4343,7 +4087,17 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-<!--tunnel-->
+	<tr class="parent" id="row56">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>2.3630 in</td>
+		<td>2.3635 in</td>
+	</tr>
+  	<tr class="child-row56 undersize_row">
+		<td> </td>
+		<td>60.02 mm</td>
+		<td>60.03 mm</td>
+	</tr>
+	<!--tunnel-->
 </table>
 
 <br>
@@ -4354,28 +4108,23 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">25 - 29 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+ 45</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step3</td>
+		<td>Step 3</td>
 		<td colspan="2">loosen all bolts</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 4</td>
+		<td>Step 4</td>
 		<td colspan="2">25 - 29 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 5</td>
+		<td>Step 5</td>
 		<td colspan="2">+ 95</td>
 	</tr>
 	<!--torque-->
@@ -4398,12 +4147,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row56">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row57">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2050 in</td>
 		<td>2.2056 in</td>
 	</tr>
-  	<tr class="child-row56 undersize_row">
+  	<tr class="child-row57 undersize_row">
 		<td> </td>
 		<td>56.01 mm</td>
 		<td>56.02 mm</td>
@@ -4419,8 +4168,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">45-48 Nm</td>
 	</tr>
 	<!--torque-->
@@ -4443,12 +4191,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row57">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row58">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.7717 in</td>
 		<td>1.7724 in</td>
 	</tr>
-  	<tr class="child-row57 undersize_row">
+  	<tr class="child-row58 undersize_row">
 		<td> </td>
 		<td>45.00 mm</td>
 		<td>45.02 mm</td>
@@ -4464,8 +4212,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td></td>
 		<td colspan="2">32-35 Nm</td>
 	</tr>
 	<!--torque-->
@@ -4488,12 +4235,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row58">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row59">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8898 in</td>
 		<td>1.8906 in</td>
 	</tr>
-  	<tr class="child-row58 undersize_row">
+  	<tr class="child-row59 undersize_row">
 		<td> </td>
 		<td>48.00 mm</td>
 		<td>48.02 mm</td>
@@ -4508,7 +4255,15 @@
 	<tr>
 		<th colspan="3">Torque Setting</th>
 	</tr>
-<!--torque-->
+	<tr>
+		<td>Step 1</td>
+		<td colspan="2">20 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">+  90</td>
+	</tr>
+	<!--torque-->
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
@@ -4528,48 +4283,8 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row59">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td>1.8898 in</td>
-		<td>1.8906 in</td>
-	</tr>
-  	<tr class="child-row59 undersize_row">
-		<td> </td>
-		<td>48.00 mm</td>
-		<td>48.02 mm</td>
-	</tr>
-	<!--tunnel-->
-</table>
-
-<br>
-
-<table>
-
-	<tr>
-		<th colspan="3">Torque Setting</th>
-	</tr>
-<!--torque-->
-	<tr>
-		<td>Notes</td>
-		<td colspan="2"> </td>
-	</tr>
-</table>
-</div>
-</div>
-<br>
-	<div class="card shadow">
-	  <div class="card-header bg-success text-light">
-		<strong>4G64 (SOHC 8 Valve)</strong>
-	  </div>
-	  <div class="card-body">
-
-<table>
-	<tr>
-		<th colspan="3">Tunnel Size</th>
-	</tr>
-	
 	<tr class="parent" id="row60">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8898 in</td>
 		<td>1.8906 in</td>
 	</tr>
@@ -4589,18 +4304,59 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">20 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
+		<td colspan="2">+  90</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2"> </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>4G64 (SOHC 8 Valve)</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+	<tr class="parent" id="row61">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>1.8898 in</td>
+		<td>1.8906 in</td>
+	</tr>
+  	<tr class="child-row61 undersize_row">
+		<td> </td>
+		<td>48.00 mm</td>
+		<td>48.02 mm</td>
+	</tr>
+	<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td>Step 1</td>
+		<td colspan="2">20 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -4623,12 +4379,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row61">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row62">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8898 in</td>
 		<td>1.8906 in</td>
 	</tr>
-  	<tr class="child-row61 undersize_row">
+  	<tr class="child-row62 undersize_row">
 		<td> </td>
 		<td>48.00 mm</td>
 		<td>48.02 mm</td>
@@ -4644,8 +4400,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -4668,12 +4423,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row62">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row63">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8897 in</td>
 		<td>1.8905 in</td>
 	</tr>
-  	<tr class="child-row62 undersize_row">
+  	<tr class="child-row63 undersize_row">
 		<td> </td>
 		<td>48.00 mm</td>
 		<td>48.02 mm</td>
@@ -4689,18 +4444,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">20 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -4723,12 +4471,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row63">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row64">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8897 in</td>
 		<td>1.8905 in</td>
 	</tr>
-  	<tr class="child-row63 undersize_row">
+  	<tr class="child-row64 undersize_row">
 		<td> </td>
 		<td>48.00 mm</td>
 		<td>48.02 mm</td>
@@ -4744,18 +4492,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">20 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -4778,12 +4519,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row64">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row65">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2835 in</td>
 		<td>2.2842 in</td>
 	</tr>
-  	<tr class="child-row64 undersize_row">
+  	<tr class="child-row65 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -4799,18 +4540,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">50 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -4833,12 +4567,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row65">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row66">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2835 in</td>
 		<td>2.2842 in</td>
 	</tr>
-  	<tr class="child-row65 undersize_row">
+  	<tr class="child-row66 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -4854,28 +4588,19 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">29 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">49 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
+		<td>Step 3</td>
 		<td colspan="2">+  45</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 4</td>
+		<td>Step 4</td>
 		<td colspan="2">+  45</td>
 	</tr>
 	<!--torque-->
@@ -4898,12 +4623,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row66">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row67">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2835 in</td>
 		<td>2.2842 in</td>
 	</tr>
-  	<tr class="child-row66 undersize_row">
+  	<tr class="child-row67 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -4919,28 +4644,19 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">29 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">49 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
+		<td>Step 3</td>
 		<td colspan="2">+  45</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 4</td>
+		<td>Step 4</td>
 		<td colspan="2">+  45</td>
 	</tr>
 	<!--torque-->
@@ -4963,12 +4679,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row67">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row68">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0866 in</td>
 		<td>2.0874 in</td>
 	</tr>
-  	<tr class="child-row67 undersize_row">
+  	<tr class="child-row68 undersize_row">
 		<td> </td>
 		<td>53.00 mm</td>
 		<td>53.02 mm</td>
@@ -5003,12 +4719,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row68">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row69">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0866 in</td>
 		<td>2.0874 in</td>
 	</tr>
-  	<tr class="child-row68 undersize_row">
+  	<tr class="child-row69 undersize_row">
 		<td> </td>
 		<td>53.00 mm</td>
 		<td>53.02 mm</td>
@@ -5024,8 +4740,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">51 Nm</td>
 	</tr>
 	<!--torque-->
@@ -5048,12 +4763,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row69">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row70">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2835 in</td>
 		<td>2.2842 in</td>
 	</tr>
-  	<tr class="child-row69 undersize_row">
+  	<tr class="child-row70 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -5069,8 +4784,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">50-53 Nm</td>
 	</tr>
 	<!--torque-->
@@ -5093,12 +4807,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row70">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row71">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2835 in</td>
 		<td>2.2842 in</td>
 	</tr>
-  	<tr class="child-row70 undersize_row">
+  	<tr class="child-row71 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -5114,8 +4828,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">50-53 Nm</td>
 	</tr>
 	<!--torque-->
@@ -5149,8 +4862,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">50-53 Nm</td>
 	</tr>
 	<!--torque-->
@@ -5164,7 +4876,11 @@
 <br>
 
 </div>
-<div id="9" class="Nissan data">
+<div id="9" class="NVE data">
+	</br>
+	
+</div>
+<div id="10" class="Nissan data">
 	</br>
 		<div class="card shadow">
 	  <div class="card-header bg-success text-light">
@@ -5177,12 +4893,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row71">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row72">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8898 in</td>
 		<td>1.8903 in</td>
 	</tr>
-  	<tr class="child-row71 undersize_row">
+  	<tr class="child-row72 undersize_row">
 		<td> </td>
 		<td>48.00 mm</td>
 		<td>48.01 mm</td>
@@ -5198,8 +4914,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">41-44 Nm</td>
 	</tr>
 	<!--torque-->
@@ -5222,12 +4937,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row72">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row73">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8898 in</td>
 		<td>1.8903 in</td>
 	</tr>
-  	<tr class="child-row72 undersize_row">
+  	<tr class="child-row73 undersize_row">
 		<td> </td>
 		<td>48.00 mm</td>
 		<td>48.01 mm</td>
@@ -5243,8 +4958,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">31-37 Nm</td>
 	</tr>
 	<!--torque-->
@@ -5278,8 +4992,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -5302,22 +5015,22 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row73">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row74">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1654 in</td>
 		<td>2.1659 in</td>
 	</tr>
-  	<tr class="child-row73 undersize_row">
+  	<tr class="child-row74 undersize_row">
 		<td> </td>
 		<td>55.00 mm</td>
 		<td>55.01 mm</td>
 	</tr>
-		<tr class="parent" id="row74">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<tr class="parent" id="row75">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8898 in</td>
 		<td>1.8903 in</td>
 	</tr>
-  	<tr class="child-row74 undersize_row">
+  	<tr class="child-row75 undersize_row">
 		<td> </td>
 		<td>48.00 mm</td>
 		<td>48.01 mm</td>
@@ -5333,8 +5046,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">47-60 Nm</td>
 	</tr>
 	<!--torque-->
@@ -5357,12 +5069,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row75">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row76">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8898 in</td>
 		<td>1.8903 in</td>
 	</tr>
-  	<tr class="child-row75 undersize_row">
+  	<tr class="child-row76 undersize_row">
 		<td> </td>
 		<td>48.00 mm</td>
 		<td>48.01 mm</td>
@@ -5397,12 +5109,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row76">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row77">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8898 in</td>
 		<td>1.8903 in</td>
 	</tr>
-  	<tr class="child-row76 undersize_row">
+  	<tr class="child-row77 undersize_row">
 		<td> </td>
 		<td>48.00 mm</td>
 		<td>48.01 mm</td>
@@ -5437,12 +5149,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row77">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row78">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0866 in</td>
 		<td>2.0871 in</td>
 	</tr>
-  	<tr class="child-row77 undersize_row">
+  	<tr class="child-row78 undersize_row">
 		<td> </td>
 		<td>53.00 mm</td>
 		<td>53.01 mm</td>
@@ -5458,18 +5170,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">14-16 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">38-44 Nm</td>
 	</tr>
 	<!--torque-->
@@ -5492,12 +5197,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row78">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row79">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0866 in</td>
 		<td>2.0871 in</td>
 	</tr>
-  	<tr class="child-row78 undersize_row">
+  	<tr class="child-row79 undersize_row">
 		<td> </td>
 		<td>53.00 mm</td>
 		<td>53.01 mm</td>
@@ -5513,18 +5218,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">14-16 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  60-65</td>
 	</tr>
 	<!--torque-->
@@ -5547,12 +5245,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row79">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row80">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0868 in</td>
 		<td>2.0871 in</td>
 	</tr>
-  	<tr class="child-row79 undersize_row">
+  	<tr class="child-row80 undersize_row">
 		<td> </td>
 		<td>53.01 mm</td>
 		<td>53.01 mm</td>
@@ -5568,8 +5266,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">37-42 Nm</td>
 	</tr>
 	<!--torque-->
@@ -5603,18 +5300,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  49-61</td>
 	</tr>
 	<!--torque-->
@@ -5648,8 +5338,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -5683,8 +5372,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer to OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -5707,12 +5395,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row80">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row81">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.3617 in</td>
 		<td>2.3622 in</td>
 	</tr>
-  	<tr class="child-row80 undersize_row">
+  	<tr class="child-row81 undersize_row">
 		<td> </td>
 		<td>59.99 mm</td>
 		<td>60.00 mm</td>
@@ -5727,7 +5415,11 @@
 	<tr>
 		<th colspan="3">Torque Setting</th>
 	</tr>
-<!--torque-->
+	<tr>
+		<td></td>
+		<td colspan="2">83 Nm</td>
+	</tr>
+	<!--torque-->
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
@@ -5747,12 +5439,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row81">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row82">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.6929 in</td>
 		<td>1.6934 in</td>
 	</tr>
-  	<tr class="child-row81 undersize_row">
+  	<tr class="child-row82 undersize_row">
 		<td> </td>
 		<td>43.00 mm</td>
 		<td>43.01 mm</td>
@@ -5768,8 +5460,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -5792,12 +5483,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row82">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row83">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.6929 in</td>
 		<td>1.6934 in</td>
 	</tr>
-  	<tr class="child-row82 undersize_row">
+  	<tr class="child-row83 undersize_row">
 		<td> </td>
 		<td>43.00 mm</td>
 		<td>43.01 mm</td>
@@ -5813,18 +5504,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">14-16 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  35-45</td>
 	</tr>
 	<!--torque-->
@@ -5847,12 +5531,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row83">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row84">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8898 in</td>
 		<td>1.8902 in</td>
 	</tr>
-  	<tr class="child-row83 undersize_row">
+  	<tr class="child-row84 undersize_row">
 		<td> </td>
 		<td>48.00 mm</td>
 		<td>48.01 mm</td>
@@ -5868,8 +5552,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -5892,12 +5575,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row84">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row85">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0866 in</td>
 		<td>2.0871 in</td>
 	</tr>
-  	<tr class="child-row84 undersize_row">
+  	<tr class="child-row85 undersize_row">
 		<td> </td>
 		<td>53.00 mm</td>
 		<td>53.01 mm</td>
@@ -5913,18 +5596,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">14-16 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">39-45 Nm</td>
 	</tr>
 	<!--torque-->
@@ -5947,53 +5623,8 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row85">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td>2.0866 in</td>
-		<td>2.0871 in</td>
-	</tr>
-  	<tr class="child-row85 undersize_row">
-		<td> </td>
-		<td>53.00 mm</td>
-		<td>53.01 mm</td>
-	</tr>
-	<!--tunnel-->
-</table>
-
-<br>
-
-<table>
-
-	<tr>
-		<th colspan="3">Torque Setting</th>
-	</tr>
-	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2">Refer OEM manual</td>
-	</tr>
-	<!--torque-->
-	<tr>
-		<td>Notes</td>
-		<td colspan="2"> </td>
-	</tr>
-</table>
-</div>
-</div>
-<br>
-	<div class="card shadow">
-	  <div class="card-header bg-success text-light">
-		<strong>RD28</strong>
-	  </div>
-	  <div class="card-body">
-
-<table>
-	<tr>
-		<th colspan="3">Tunnel Size</th>
-	</tr>
-	
 	<tr class="parent" id="row86">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0866 in</td>
 		<td>2.0871 in</td>
 	</tr>
@@ -6013,9 +5644,12 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2">Refer OEM manual</td>
+		<td></td>
+		<td colspan="2">16 Nm</td>
+	</tr>
+		<tr>
+		<td></td>
+		<td colspan="2">45 Nm</td>
 	</tr>
 	<!--torque-->
 	<tr>
@@ -6038,7 +5672,7 @@
 	</tr>
 	
 	<tr class="parent" id="row87">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.3622 in</td>
 		<td>2.3632 in</td>
 	</tr>
@@ -6058,18 +5692,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">38-40 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  40-45</td>
 	</tr>
 	<!--torque-->
@@ -6093,7 +5720,7 @@
 	</tr>
 	
 	<tr class="parent" id="row88">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.3622 in</td>
 		<td>2.3632 in</td>
 	</tr>
@@ -6113,18 +5740,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">38-40 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">67-71 Nm</td>
 	</tr>
 	<!--torque-->
@@ -6148,7 +5768,7 @@
 	</tr>
 	
 	<tr class="parent" id="row89">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.3622 in</td>
 		<td>2.3632 in</td>
 	</tr>
@@ -6168,18 +5788,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">38-40 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">67-71 Nm</td>
 	</tr>
 	<!--torque-->
@@ -6203,7 +5816,7 @@
 	</tr>
 	
 	<tr class="parent" id="row90">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.3617 in</td>
 		<td>2.3622 in</td>
 	</tr>
@@ -6223,8 +5836,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">78-83 Nm</td>
 	</tr>
 	<!--torque-->
@@ -6248,7 +5860,7 @@
 	</tr>
 	
 	<tr class="parent" id="row91">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.3617 in</td>
 		<td>2.3622 in</td>
 	</tr>
@@ -6268,8 +5880,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">78-83 Nm</td>
 	</tr>
 	<!--torque-->
@@ -6303,9 +5914,12 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2">Refer OEM manual</td>
+		<td>Step 1</td>
+		<td colspan="2">25 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">+ 55</td>
 	</tr>
 	<!--torque-->
 	<tr>
@@ -6328,7 +5942,7 @@
 	</tr>
 	
 	<tr class="parent" id="row92">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0866 in</td>
 		<td>2.0871 in</td>
 	</tr>
@@ -6348,18 +5962,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">14-16 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">38-44 Nm</td>
 	</tr>
 	<!--torque-->
@@ -6383,7 +5990,7 @@
 	</tr>
 	
 	<tr class="parent" id="row93">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0866 in</td>
 		<td>2.0871 in</td>
 	</tr>
@@ -6393,7 +6000,7 @@
 		<td>53.01 mm</td>
 	</tr>
 		<tr class="parent" id="row94">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0866 in</td>
 		<td>2.0871 in</td>
 	</tr>
@@ -6413,18 +6020,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">14-16 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  60-65</td>
 	</tr>
 	<!--torque-->
@@ -6448,7 +6048,7 @@
 	</tr>
 	
 	<tr class="parent" id="row95">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>1.8898 in</td>
 		<td>1.8903 in</td>
 	</tr>
@@ -6468,18 +6068,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">19-21 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90-95</td>
 	</tr>
 	<!--torque-->
@@ -6513,18 +6106,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">20 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">90°</td>
 	</tr>
 	<!--torque-->
@@ -6577,6 +6163,62 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
+	<tr class="parent" id="row96">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>2.1654 in</td>
+		<td>2.1659 in</td>
+	</tr>
+  	<tr class="child-row96 undersize_row">
+		<td> </td>
+		<td>55.00 mm</td>
+		<td>55.01 mm</td>
+	</tr>
+	<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td>Step 1</td>
+		<td colspan="2">29.4Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">Loosen</td>
+	</tr>
+		<tr>
+		<td>Step 3</td>
+		<td colspan="2">19.6Nm</td>
+	</tr>
+		<tr>
+		<td>Step 4</td>
+		<td colspan="2">+  120</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2"> </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>YS23DDT</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
 <!--tunnel-->
 </table>
 
@@ -6588,34 +6230,13 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
-		<td colspan="2">29.4Nm</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
-		<td colspan="2">Loosen</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 3</td>
-		<td colspan="2">19.6Nm</td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 4</td>
-		<td colspan="2">+  120</td>
+		<td>Conrods</td>
+		<td colspan="2">Refer OEM manaual</td>
 	</tr>
 	<!--torque-->
 	<tr>
 		<td>Notes</td>
-		<td colspan="2"> </td>
+		<td colspan="2">  </td>
 	</tr>
 </table>
 </div>
@@ -6632,12 +6253,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row96">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row97">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0868 in</td>
 		<td>2.0871 in</td>
 	</tr>
-  	<tr class="child-row96 undersize_row">
+  	<tr class="child-row97 undersize_row">
 		<td> </td>
 		<td>53.01 mm</td>
 		<td>53.01 mm</td>
@@ -6653,8 +6274,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">37-45 Nm</td>
 	</tr>
 	<!--torque-->
@@ -6677,12 +6297,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row97">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row98">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.3617 in</td>
 		<td>2.3622 in</td>
 	</tr>
-  	<tr class="child-row97 undersize_row">
+  	<tr class="child-row98 undersize_row">
 		<td> </td>
 		<td>59.99 mm</td>
 		<td>60.00 mm</td>
@@ -6698,8 +6318,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td></td>
 		<td colspan="2">79-83 Nm</td>
 	</tr>
 	<!--torque-->
@@ -6713,7 +6332,7 @@
 <br>
 
 </div>
-<div id="10" class="Rover data">
+<div id="11" class="Rover data">
 	</br>
 		<div class="card shadow">
 	  <div class="card-header bg-success text-light">
@@ -6726,12 +6345,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row98">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row99">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.4580 in</td>
 		<td>2.4585 in</td>
 	</tr>
-  	<tr class="child-row98 undersize_row">
+  	<tr class="child-row99 undersize_row">
 		<td> </td>
 		<td>62.43 mm</td>
 		<td>62.45 mm</td>
@@ -6757,7 +6376,7 @@
 <br>
 
 </div>
-<div id="11" class="Subaru data">
+<div id="12" class="Subaru data">
 	</br>
 		<div class="card shadow">
 	  <div class="card-header bg-success text-light">
@@ -6770,12 +6389,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row99">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row100">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1648 in</td>
 		<td>2.1652 in</td>
 	</tr>
-  	<tr class="child-row99 undersize_row">
+  	<tr class="child-row100 undersize_row">
 		<td> </td>
 		<td>54.99 mm</td>
 		<td>55.00 mm</td>
@@ -6791,8 +6410,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">Refer OEM manual</td>
 	</tr>
 	<!--torque-->
@@ -6815,12 +6433,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row100">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row101">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1648 in</td>
 		<td>2.1652 in</td>
 	</tr>
-  	<tr class="child-row100 undersize_row">
+  	<tr class="child-row101 undersize_row">
 		<td> </td>
 		<td>54.99 mm</td>
 		<td>55.00 mm</td>
@@ -6836,8 +6454,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">43-46 Nm</td>
 	</tr>
 	<!--torque-->
@@ -6860,12 +6477,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row101">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row102">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1648 in</td>
 		<td>2.1652 in</td>
 	</tr>
-  	<tr class="child-row101 undersize_row">
+  	<tr class="child-row102 undersize_row">
 		<td> </td>
 		<td>54.99 mm</td>
 		<td>55.00 mm</td>
@@ -6881,8 +6498,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">43-46 Nm</td>
 	</tr>
 	<!--torque-->
@@ -6905,12 +6521,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row102">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row103">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1654 in</td>
 		<td>2.1654 in</td>
 	</tr>
-  	<tr class="child-row102 undersize_row">
+  	<tr class="child-row103 undersize_row">
 		<td> </td>
 		<td>55.00 mm</td>
 		<td>55.00 mm</td>
@@ -6926,8 +6542,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">43-46 Nm</td>
 	</tr>
 	<!--torque-->
@@ -6950,12 +6565,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row103">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row104">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1654 in</td>
 		<td>2.1654 in</td>
 	</tr>
-  	<tr class="child-row103 undersize_row">
+  	<tr class="child-row104 undersize_row">
 		<td> </td>
 		<td>55.00 mm</td>
 		<td>55.00 mm</td>
@@ -6971,8 +6586,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">43-46 Nm</td>
 	</tr>
 	<!--torque-->
@@ -6986,7 +6600,141 @@
 <br>
 
 </div>
-<div id="12" class="Toyota data">
+<div id="13" class="Suzuki data">
+	</br>
+		<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>J20B (DOHC 16 Valve)</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td>Conrods</td>
+		<td colspan="2">45 Nm</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2">  </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>J24B</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+	<tr class="parent" id="row105">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>2.0866 in</td>
+		<td>2.0873 in</td>
+	</tr>
+  	<tr class="child-row105 undersize_row">
+		<td> </td>
+		<td>53.00 mm</td>
+		<td>53.02 mm</td>
+	</tr>
+	<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td>Step 1</td>
+		<td colspan="2">15 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">+ 45</td>
+	</tr>
+		<tr>
+		<td>Step 3</td>
+		<td colspan="2">+ 45</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2">  </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>M15A (DOHC 16 Valve)</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+	<tr class="parent" id="row106">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>1.7724 in</td>
+		<td>1.7724 in</td>
+	</tr>
+  	<tr class="child-row106 undersize_row">
+		<td> </td>
+		<td>45.02 mm</td>
+		<td>45.02 mm</td>
+	</tr>
+	<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td>Conrods</td>
+		<td colspan="2">Refer OEM manual</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2">  </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+
+</div>
+<div id="14" class="Toyota data">
 	</br>
 		<div class="card shadow">
 	  <div class="card-header bg-success text-light">
@@ -6999,12 +6747,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row104">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row107">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2835 in</td>
 		<td>2.2843 in</td>
 	</tr>
-  	<tr class="child-row104 undersize_row">
+  	<tr class="child-row107 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -7020,14 +6768,67 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">88 Nm</td>
 	</tr>
 	<!--torque-->
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>13B</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+	<tr class="parent" id="row108">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>2.5197 in</td>
+		<td>2.5207 in</td>
+	</tr>
+  	<tr class="child-row108 undersize_row">
+		<td> </td>
+		<td>64.00 mm</td>
+		<td>64.03 mm</td>
+	</tr>
+		<tr class="parent" id="row109">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>2.5197 in</td>
+		<td>2.5207 in</td>
+	</tr>
+  	<tr class="child-row109 undersize_row">
+		<td> </td>
+		<td>64.00 mm</td>
+		<td>64.03 mm</td>
+	</tr>
+	<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td>Conrods</td>
+		<td colspan="2">118 Nm</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2">  </td>
 	</tr>
 </table>
 </div>
@@ -7044,12 +6845,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row105">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row110">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.5197 in</td>
 		<td>2.5207 in</td>
 	</tr>
-  	<tr class="child-row105 undersize_row">
+  	<tr class="child-row110 undersize_row">
 		<td> </td>
 		<td>64.00 mm</td>
 		<td>64.03 mm</td>
@@ -7065,18 +6866,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">68 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -7099,12 +6893,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row106">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row111">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.3827 in</td>
 		<td>2.3835 in</td>
 	</tr>
-  	<tr class="child-row106 undersize_row">
+  	<tr class="child-row111 undersize_row">
 		<td> </td>
 		<td>60.52 mm</td>
 		<td>60.54 mm</td>
@@ -7120,19 +6914,65 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">48 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>1GD-FTV</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+	<tr class="parent" id="row112">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>2.2840 in</td>
+		<td>2.2843 in</td>
+	</tr>
+  	<tr class="child-row112 undersize_row">
+		<td> </td>
+		<td>58.01 mm</td>
+		<td>58.02 mm</td>
+	</tr>
+	<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td>Step 1</td>
+		<td colspan="2">40 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">+ 90</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2">  </td>
 	</tr>
 </table>
 </div>
@@ -7149,12 +6989,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row107">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row113">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.3228 in</td>
 		<td>2.3228 in</td>
 	</tr>
-  	<tr class="child-row107 undersize_row">
+  	<tr class="child-row113 undersize_row">
 		<td> </td>
 		<td>59.00 mm</td>
 		<td>59.00 mm</td>
@@ -7170,13 +7010,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+ 90</td>
 	</tr>
 	<!--torque-->
@@ -7199,12 +7037,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row108">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row114">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.4415 in</td>
 		<td>2.4422 in</td>
 	</tr>
-  	<tr class="child-row108 undersize_row">
+  	<tr class="child-row114 undersize_row">
 		<td> </td>
 		<td>62.01 mm</td>
 		<td>62.03 mm</td>
@@ -7220,14 +7058,12 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">37 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
-		<td colspan="2">+  90</td>
+		<td>Step 2</td>
+		<td colspan="2">+ 90</td>
 	</tr>
 	<!--torque-->
 	<tr>
@@ -7249,12 +7085,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row109">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row115">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.4415 in</td>
 		<td>2.4422 in</td>
 	</tr>
-  	<tr class="child-row109 undersize_row">
+  	<tr class="child-row115 undersize_row">
 		<td> </td>
 		<td>62.01 mm</td>
 		<td>62.03 mm</td>
@@ -7270,13 +7106,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">37 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -7299,12 +7133,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row110">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row116">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.4415 in</td>
 		<td>2.4422 in</td>
 	</tr>
-  	<tr class="child-row110 undersize_row">
+  	<tr class="child-row116 undersize_row">
 		<td> </td>
 		<td>62.01 mm</td>
 		<td>62.03 mm</td>
@@ -7320,13 +7154,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">37 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -7349,12 +7181,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row111">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row117">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.4415 in</td>
 		<td>2.4422 in</td>
 	</tr>
-  	<tr class="child-row111 undersize_row">
+  	<tr class="child-row117 undersize_row">
 		<td> </td>
 		<td>62.01 mm</td>
 		<td>62.03 mm</td>
@@ -7370,19 +7202,65 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">35 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
 	<tr>
 		<td>Notes</td>
 		<td colspan="2"> </td>
+	</tr>
+</table>
+</div>
+</div>
+<br>
+	<div class="card shadow">
+	  <div class="card-header bg-success text-light">
+		<strong>1KZ-TE</strong>
+	  </div>
+	  <div class="card-body">
+
+<table>
+	<tr>
+		<th colspan="3">Tunnel Size</th>
+	</tr>
+	
+	<tr class="parent" id="row118">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
+		<td>2.4415 in</td>
+		<td>2.4422 in</td>
+	</tr>
+  	<tr class="child-row118 undersize_row">
+		<td> </td>
+		<td>62.01 mm</td>
+		<td>62.03 mm</td>
+	</tr>
+	<!--tunnel-->
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<th colspan="3">Torque Setting</th>
+	</tr>
+	<tr>
+		<td>Step 1</td>
+		<td colspan="2">29 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">+  90</td>
+	</tr>
+	<!--torque-->
+	<tr>
+		<td>Notes</td>
+		<td colspan="2">  </td>
 	</tr>
 </table>
 </div>
@@ -7399,12 +7277,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row112">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row119">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2047 in</td>
 		<td>2.2055 in</td>
 	</tr>
-  	<tr class="child-row112 undersize_row">
+  	<tr class="child-row119 undersize_row">
 		<td> </td>
 		<td>56.00 mm</td>
 		<td>56.02 mm</td>
@@ -7420,13 +7298,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">30 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -7449,12 +7325,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row113">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row120">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2835 in</td>
 		<td>2.2835 in</td>
 	</tr>
-  	<tr class="child-row113 undersize_row">
+  	<tr class="child-row120 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.00 mm</td>
@@ -7470,13 +7346,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
-		<td colspan="2">35Nm</td>
+		<td>Step 1</td>
+		<td colspan="2">35 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -7499,12 +7373,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row114">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row121">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2047 in</td>
 		<td>2.2056 in</td>
 	</tr>
-  	<tr class="child-row114 undersize_row">
+  	<tr class="child-row121 undersize_row">
 		<td> </td>
 		<td>56.00 mm</td>
 		<td>56.02 mm</td>
@@ -7520,8 +7394,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">57-65 Nm</td>
 	</tr>
 	<!--torque-->
@@ -7544,12 +7417,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row115">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row122">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.4409 in</td>
 		<td>2.4417 in</td>
 	</tr>
-  	<tr class="child-row115 undersize_row">
+  	<tr class="child-row122 undersize_row">
 		<td> </td>
 		<td>62.00 mm</td>
 		<td>62.02 mm</td>
@@ -7565,18 +7438,15 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">64-73 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Mains (with centre valve cover studs)</td>
+		<td>Mains (with centre valve cover studs)</td>
 		<td colspan="2">196 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Mains (with outer edge valve cover studs)</td>
+		<td>Mains (with outer edge valve cover studs)</td>
 		<td colspan="2">140 Nm</td>
 	</tr>
 	<!--torque-->
@@ -7599,12 +7469,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row116">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row123">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2362 in</td>
 		<td>2.2370 in</td>
 	</tr>
-  	<tr class="child-row116 undersize_row">
+  	<tr class="child-row123 undersize_row">
 		<td> </td>
 		<td>56.80 mm</td>
 		<td>56.82 mm</td>
@@ -7620,8 +7490,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">47-74 Nm</td>
 	</tr>
 	<!--torque-->
@@ -7655,9 +7524,12 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2">Refer OEM manual</td>
+		<td>Step 1</td>
+		<td colspan="2">25 Nm</td>
+	</tr>
+		<tr>
+		<td>Step 2</td>
+		<td colspan="2">+ 90</td>
 	</tr>
 	<!--torque-->
 	<tr>
@@ -7679,12 +7551,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row117">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row124">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2835 in</td>
 		<td>2.2843 in</td>
 	</tr>
-  	<tr class="child-row117 undersize_row">
+  	<tr class="child-row124 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -7700,8 +7572,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">88 Nm</td>
 	</tr>
 	<!--torque-->
@@ -7724,12 +7595,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row118">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row125">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2047 in</td>
 		<td>2.2055 in</td>
 	</tr>
-  	<tr class="child-row118 undersize_row">
+  	<tr class="child-row125 undersize_row">
 		<td> </td>
 		<td>56.00 mm</td>
 		<td>56.02 mm</td>
@@ -7764,12 +7635,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row119">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row126">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2836 in</td>
 		<td>2.2844 in</td>
 	</tr>
-  	<tr class="child-row119 undersize_row">
+  	<tr class="child-row126 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -7804,12 +7675,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row120">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row127">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2047 in</td>
 		<td>2.2057 in</td>
 	</tr>
-  	<tr class="child-row120 undersize_row">
+  	<tr class="child-row127 undersize_row">
 		<td> </td>
 		<td>56.00 mm</td>
 		<td>56.02 mm</td>
@@ -7825,18 +7696,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90-100</td>
 	</tr>
 	<!--torque-->
@@ -7859,12 +7723,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row121">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row128">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2055 in</td>
 		<td>2.2055 in</td>
 	</tr>
-  	<tr class="child-row121 undersize_row">
+  	<tr class="child-row128 undersize_row">
 		<td> </td>
 		<td>56.02 mm</td>
 		<td>56.02 mm</td>
@@ -7880,13 +7744,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+ 90</td>
 	</tr>
 	<!--torque-->
@@ -7909,12 +7771,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row122">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row129">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1654 in</td>
 		<td>2.1663 in</td>
 	</tr>
-  	<tr class="child-row122 undersize_row">
+  	<tr class="child-row129 undersize_row">
 		<td> </td>
 		<td>55.00 mm</td>
 		<td>55.02 mm</td>
@@ -7930,13 +7792,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">25  Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -7959,12 +7819,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row123">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row130">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.5197 in</td>
 		<td>2.5205 in</td>
 	</tr>
-  	<tr class="child-row123 undersize_row">
+  	<tr class="child-row130 undersize_row">
 		<td> </td>
 		<td>64.00 mm</td>
 		<td>64.02 mm</td>
@@ -7999,12 +7859,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row124">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row131">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2047 in</td>
 		<td>2.2055 in</td>
 	</tr>
-  	<tr class="child-row124 undersize_row">
+  	<tr class="child-row131 undersize_row">
 		<td> </td>
 		<td>56.00 mm</td>
 		<td>56.02 mm</td>
@@ -8020,8 +7880,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">59 Nm</td>
 	</tr>
 	<!--torque-->
@@ -8044,12 +7903,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row125">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row132">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2836 in</td>
 		<td>2.2844 in</td>
 	</tr>
-  	<tr class="child-row125 undersize_row">
+  	<tr class="child-row132 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -8065,18 +7924,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">54 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -8099,12 +7951,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row126">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row133">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2047 in</td>
 		<td>2.2057 in</td>
 	</tr>
-  	<tr class="child-row126 undersize_row">
+  	<tr class="child-row133 undersize_row">
 		<td> </td>
 		<td>56.00 mm</td>
 		<td>56.02 mm</td>
@@ -8120,18 +7972,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">45 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -8154,12 +7999,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row127">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row134">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2835 in</td>
 		<td>2.2844 in</td>
 	</tr>
-  	<tr class="child-row127 undersize_row">
+  	<tr class="child-row134 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -8175,18 +8020,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -8209,12 +8047,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row128">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row135">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2835 in</td>
 		<td>2.2844 in</td>
 	</tr>
-  	<tr class="child-row128 undersize_row">
+  	<tr class="child-row135 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -8230,18 +8068,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -8264,12 +8095,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row129">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row136">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2836 in</td>
 		<td>2.2844 in</td>
 	</tr>
-  	<tr class="child-row129 undersize_row">
+  	<tr class="child-row136 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -8285,18 +8116,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">54 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -8319,12 +8143,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row130">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row137">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1654 in</td>
 		<td>2.1663 in</td>
 	</tr>
-  	<tr class="child-row130 undersize_row">
+  	<tr class="child-row137 undersize_row">
 		<td> </td>
 		<td>55.00 mm</td>
 		<td>55.02 mm</td>
@@ -8340,18 +8164,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">24 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -8374,12 +8191,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row131">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row138">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.2835 in</td>
 		<td>2.2844 in</td>
 	</tr>
-  	<tr class="child-row131 undersize_row">
+  	<tr class="child-row138 undersize_row">
 		<td> </td>
 		<td>58.00 mm</td>
 		<td>58.02 mm</td>
@@ -8395,18 +8212,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -8429,12 +8239,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row132">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row139">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.0079 in</td>
 		<td>2.0088 in</td>
 	</tr>
-  	<tr class="child-row132 undersize_row">
+  	<tr class="child-row139 undersize_row">
 		<td> </td>
 		<td>51.00 mm</td>
 		<td>51.02 mm</td>
@@ -8450,18 +8260,11 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
-		<td colspan="2"></td>
-	</tr>
-		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 1</td>
+		<td>Step 1</td>
 		<td colspan="2">25 Nm</td>
 	</tr>
 		<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Step 2</td>
+		<td>Step 2</td>
 		<td colspan="2">+  90</td>
 	</tr>
 	<!--torque-->
@@ -8484,12 +8287,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row133">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row140">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.1662 in</td>
 		<td>2.1667 in</td>
 	</tr>
-  	<tr class="child-row133 undersize_row">
+  	<tr class="child-row140 undersize_row">
 		<td> </td>
 		<td>55.02 mm</td>
 		<td>55.03 mm</td>
@@ -8505,8 +8308,7 @@
 		<th colspan="3">Torque Setting</th>
 	</tr>
 	<tr>
-		<td width="33%">&nbsp;&nbsp;Rod</td>
-		<td width="33%">Conrods</td>
+		<td>Conrods</td>
 		<td colspan="2">64 Nm</td>
 	</tr>
 	<!--torque-->
@@ -8529,12 +8331,12 @@
 		<th colspan="3">Tunnel Size</th>
 	</tr>
 	
-	<tr class="parent" id="row134">
-		<td width="33%">&nbsp;&nbsp;Rod</td>
+	<tr class="parent" id="row141">
+		<td class="undersize_td" width="33%">&nbsp;&nbsp;Rod</td>
 		<td>2.4409 in</td>
 		<td>2.4417 in</td>
 	</tr>
-  	<tr class="child-row134 undersize_row">
+  	<tr class="child-row141 undersize_row">
 		<td> </td>
 		<td>62.00 mm</td>
 		<td>62.02 mm</td>
@@ -8562,6 +8364,9 @@
 </div>
 <!--datatable-->
 	</main>
+
+<!--modalnotes-->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
