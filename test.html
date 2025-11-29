@@ -1,0 +1,271 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Accessible Autocomplete Component Example</title>
+<!--<link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">-->
+<link rel='stylesheet' href='https://unpkg.com/@trevoreyre/autocomplete-js/dist/style.css'>
+<style>
+body { font-family: 'Roboto Condensed'; background-color: #fafafa; }
+h1 { margin: 150px auto; max-width: 640px; text-align: center; }
+  #autocomplete {
+  max-width: 400px;
+  margin: 0 auto;
+}
+p { margin: 20px auto; text-align: center; }
+
+  .data {
+    display: none;
+  }
+</style>
+</head>
+
+<body>
+
+
+
+<div id="autocomplete" class="autocomplete">
+  <input class="autocomplete-input"
+    placeholder="Search for an engine"
+    aria-label="Search for a country"
+  >
+  <ul class="autocomplete-results"></ul>
+</div>
+
+<div id="Holden LS1" class="data">
+Holden LS1
+</div>
+
+<div id="Toyota 1GR-FE" class="data">
+Lybia
+</div>
+
+
+<script src='https://unpkg.com/@trevoreyre/autocomplete-js'></script>
+<script>
+window['engines'] = [
+  'Holden LS1',
+  'Toyota 1GR-FE',
+  'Toyota 2GR-FE',
+  'Andorra',
+  'Angola',
+  'Antigua & Barbuda',
+  'Argentina',
+  'Armenia',
+  'Australia',
+  'Austria',
+  'Azerbaijan',
+  'Bahamas',
+  'Bahrain',
+  'Bangladesh',
+  'Barbados',
+  'Belarus',
+  'Belgium',
+  'Belize',
+  'Benin',
+  'Bhutan',
+  'Bolivia',
+  'Bosnia & Herzegovina',
+  'Botswana',
+  'Brazil',
+  'Brunei',
+  'Bulgaria',
+  'Burkina Faso',
+  'Burundi',
+  'Cambodia',
+  'Cameroon',
+  'Canada',
+  'Cape Verde',
+  'Central African Republic',
+  'Chad',
+  'Chile',
+  'China',
+  'Colombia',
+  'Comoros',
+  'Congo',
+  'Congo Democratic Republic',
+  'Costa Rica',
+  "Cote D'Ivoire",
+  'Croatia',
+  'Cuba',
+  'Cyprus',
+  'Czech Republic',
+  'Denmark',
+  'Djibouti',
+  'Dominica',
+  'Dominican Republic',
+  'East Timor',
+  'Ecuador',
+  'Egypt',
+  'El Salvador',
+  'Equatorial Guinea',
+  'Eritrea',
+  'Estonia',
+  'Ethiopia',
+  'Fiji',
+  'Finland',
+  'France',
+  'Gabon',
+  'Gambia',
+  'Georgia',
+  'Germany',
+  'Ghana',
+  'Greece',
+  'Grenada',
+  'Guatemala',
+  'Guinea',
+  'Guinea-Bissau',
+  'Guyana',
+  'Haiti',
+  'Honduras',
+  'Hungary',
+  'Iceland',
+  'India',
+  'Indonesia',
+  'Iran',
+  'Iraq',
+  'Ireland',
+  'Israel',
+  'Italy',
+  'Jamaica',
+  'Japan',
+  'Jordan',
+  'Kazakhstan',
+  'Kenya',
+  'Kiribati',
+  'Korea North',
+  'Korea South',
+  'Kosovo',
+  'Kuwait',
+  'Kyrgyzstan',
+  'Laos',
+  'Latvia',
+  'Lebanon',
+  'Lesotho',
+  'Liberia',
+  'Libya',
+  'Liechtenstein',
+  'Lithuania',
+  'Luxembourg',
+  'Macedonia',
+  'Madagascar',
+  'Malawi',
+  'Malaysia',
+  'Maldives',
+  'Mali',
+  'Malta',
+  'Marshall Islands',
+  'Mauritania',
+  'Mauritius',
+  'Mexico',
+  'Micronesia',
+  'Moldova',
+  'Monaco',
+  'Mongolia',
+  'Montenegro',
+  'Morocco',
+  'Mozambique',
+  'Myanmar (Burma)',
+  'Namibia',
+  'Nauru',
+  'Nepal',
+  'New Zealand',
+  'Nicaragua',
+  'Niger',
+  'Nigeria',
+  'Norway',
+  'Oman',
+  'Pakistan',
+  'Palau',
+  'Palestinian State*',
+  'Panama',
+  'Papua New Guinea',
+  'Paraguay',
+  'Peru',
+  'Poland',
+  'Portugal',
+  'Qatar',
+  'Romania',
+  'Russia',
+  'Rwanda',
+  'Samoa',
+  'San Marino',
+  'Sao Tome & Principe',
+  'Saudi Arabia',
+  'Senegal',
+  'Serbia',
+  'Seychelles',
+  'Sierra Leone',
+  'Singapore',
+  'Slovakia',
+  'Slovenia',
+  'Solomon Islands',
+  'Somalia',
+  'South Africa',
+  'South Sudan',
+  'Spain',
+  'Sri Lanka',
+  'St. Kitts & Nevis',
+  'St. Lucia',
+  'St. Vincent & The Grenadines',
+  'Sudan',
+  'Suriname',
+  'Swaziland',
+  'Sweden',
+  'Switzerland',
+  'Syria',
+  'Taiwan',
+  'Tajikistan',
+  'Tanzania',
+  'Thailand',
+  'The Netherlands',
+  'The Philippines',
+  'Togo',
+  'Tonga',
+  'Trinidad & Tobago',
+  'Tunisia',
+  'Turkey',
+  'Turkmenistan',
+  'Tuvalu',
+  'Uganda',
+  'Ukraine',
+  'United Arab Emirates',
+  'United Kingdom',
+  'United States Of America',
+  'Uruguay',
+  'Uzbekistan',
+  'Vanuatu',
+  'Vatican City (Holy See)',
+  'Venezuela',
+  'Vietnam',
+  'Yemen',
+  'Zambia',
+  'Zimbabwe',
+]
+  new Autocomplete('#autocomplete', {
+  search: input => {
+    if (input.length < 1) { return [] }
+    return engines.filter(engines => {
+      return engines.toLowerCase()
+        .includes(input.toLowerCase())
+    })
+  },
+    onSubmit: result => 
+	{
+			var myDiv = document.getElementsByClassName ('data');
+			for (var i = 0; i < myDiv.length; i++) 
+			{
+				myDiv[i].style.display = 'none';
+			}
+			document.getElementById(result).style.display = "block";
+	}
+})
+</script>
+
+</body>
+
+</html>
