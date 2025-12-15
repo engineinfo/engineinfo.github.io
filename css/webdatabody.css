@@ -1,0 +1,99 @@
+body 
+{
+	font-family: Arial, sans-serif; /* Sets Arial as the primary font, with sans-serif as a fallback */
+	font-size: 14px; /* Sets the base font size to 16 pixels */
+	padding:5px;
+	min-height: 75rem;
+}
+
+.data 
+{
+	margin-top: 18px;
+	display: none;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+}
+
+th, td {
+  padding: 5px;
+}
+
+tr:hover 
+{
+	background-color: #f2f2f2; 
+}
+
+th {
+  background-color: #ddd;
+
+}
+
+.undersize_row
+{
+ display:none;
+ color:red;
+}
+
+.tableBullet
+{
+  padding-left:24px; /* image width plus any desired padding */
+  background:url(../images/bullet_red.png) center left no-repeat;
+}
+
+.card-body
+{
+	padding: 8px;
+}
+
+a:hover 
+{
+  text-decoration: none;
+}
+
+.panel-body
+{
+	padding: 3px;
+}
+
+.header-with-line 
+{
+    position: relative;
+    overflow: hidden;
+    font-style: italic;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	color: #236ddb;
+}
+.header-with-line:after 
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-left: 10px;
+    border-top: 1px solid #259BC8;
+	
+}
+
+.top-fixed-div 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensures it spans the full width */
+  z-index: 1000; /* Optional: ensures it's above other content */
+  padding: 5px;
+  background-color: white;
+}
