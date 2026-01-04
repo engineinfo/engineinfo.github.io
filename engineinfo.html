@@ -37,7 +37,6 @@
 	<div class="top-fixed-div">
 		<div id="autocomplete" class="autocomplete">
 		  <input type="search" id="enginesearchbox" class="autocomplete-input" placeholder="Search for an engine" aria-label="Search for a country">
-		  <button id="clearButton">Clear</button>
 <ul class="autocomplete-result-list"></ul>
 		</div>
 	</div>
@@ -80956,13 +80955,6 @@
 	</div>
 	
 	<!--nextenginediv-->
-
-	<script>
-  		$('#clearButton').click(function() {
-    		$('#enginesearchbox').val('');
-  		});
-	</script>
-
 	<script src='https://unpkg.com/@trevoreyre/autocomplete-js'></script>
 	<script>
 	window['engines'] = 
