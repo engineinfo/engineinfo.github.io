@@ -44,6 +44,10 @@ th {
  color:red;
 }
 
+.undersize_td
+{
+	background: url(../images/tiny-bullet.png) no-repeat right center;
+}
 
 .tableBullet
 {
