@@ -109,6 +109,7 @@ function compRatio(form)
 				</div>
 				<div id="0-1" class="panel-collapse collapse">
 					<div class="panel-body">
+		<div style="padding:10px;">
 		<div>
 			<label>Newton Meters</label><br>
 			<input id="inputNm" type="number" placeholder="Nm" oninput="TorqueConverter(this.id,this.value)" onchange="TorqueConverter(this.id,this.value)">
@@ -117,6 +118,7 @@ function compRatio(form)
 		<div>
 			<label>Foot Pounds</label><br>
 			<input id="inputFtLbs" type="number" placeholder="Ft/Lbs" oninput="TorqueConverter(this.id,this.value)" onchange="TorqueConverter(this.id,this.value)">
+		</div>
 		</div>
 					</div>
 				</div>
@@ -130,6 +132,7 @@ function compRatio(form)
 				</div>
 				<div id="0-2" class="panel-collapse collapse">
 					<div class="panel-body">
+		<div style="padding:10px;">
 		<div>
 			<label>Millimeters</label><br>
 			<input id="inputMm" type="number" placeholder="mm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
@@ -138,6 +141,7 @@ function compRatio(form)
 		<div>
 			<label>Inches</label><br>
 			<input id="inputIn" type="number" placeholder="in" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+		</div>
 		</div>
 					</div>
 				</div>
@@ -151,55 +155,55 @@ function compRatio(form)
 				</div>
 				<div id="0-3" class="panel-collapse collapse">
 					<div class="panel-body">
-						<div style="padding:10px;">
-							<form>
-								<div>
-									<label>Bore Diameter</label><br>
-									<input id="bore" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
-								</div>
-								<br>
-								<div>
-									<label>Stroke</label><br>
-									<input id="stroke" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
-								</div>
-								<br>
-								<div>
-									<label>Combustion Chamber Volume</label><br>
-									<input id="chamber" class="w3-input w3-border" type="number" placeholder="Input (CC's)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
-								</div>
-								<br>
-								<div>
-									<label>Piston Deck Height</label><br>
-									<input id="deckHeight" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
-								</div>
-								<br>
-								<div>
-									<label>Piston Volume</label><br>
-									<input id="pistonVolume" class="w3-input w3-border" type="number" placeholder="Input (- Dome) volume (CC's)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
-								</div>
-								<br>
-								<div>
-									<label>Head Gasket Diameter</label><br>
-									<input id="gasketDiameter" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
-								</div>
-								<br>
-								<div>
-									<label>Head Gasket Thickness</label><br>
-									<input id="gasketThickness" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
-								</div>
-								<br>
-								<div>
-									<label>Top Ring Height</label><br>
-									<input id="ringHeight" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
-								</div>
-								<br>
-								
-								<div>
-									<label>Compression Ratio</label><br>
-									<input id="compRatioValue" class="w3-input w3-border w3-text-red" type="text" disabled> <label> : 1</label>
-								</div>
-							</form>
-						</div>
+	<div style="padding:10px;">
+	<form>
+		<div>
+			<label>Bore Diameter</label><br>
+			<input id="bore" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Stroke</label><br>
+			<input id="stroke" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Combustion Chamber Volume</label><br>
+			<input id="chamber" class="w3-input w3-border" type="number" placeholder="Input (CC's)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Piston Deck Height</label><br>
+			<input id="deckHeight" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Piston Volume</label><br>
+			<input id="pistonVolume" class="w3-input w3-border" type="number" placeholder="Input (- Dome) volume (CC's)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Head Gasket Diameter</label><br>
+			<input id="gasketDiameter" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Head Gasket Thickness</label><br>
+			<input id="gasketThickness" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		<div>
+			<label>Top Ring Height</label><br>
+			<input id="ringHeight" class="w3-input w3-border" type="number" placeholder="Input (in)" oninput="compRatio(this.form)" onchange="compRatio(this.form)">
+		</div>
+		<br>
+		
+		<div>
+			<label>Compression Ratio</label><br>
+			<input id="compRatioValue" class="w3-input w3-border w3-text-red" type="text" disabled> <label> : 1</label>
+		</div>
+	</form>
+	</div>
 					</div>
 				</div>
 			</div>
