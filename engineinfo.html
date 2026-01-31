@@ -33,6 +33,15 @@
 <link rel='stylesheet' href="css/webdatabody.css?v=1.6">
 
 <script>
+    $(document).ready( function() {
+	  $('#clearButton').click(function() 
+	  {
+		$('#enginesearchbox').val('');
+		$(".data").hide();
+		$("#enginesearchbox").focus();
+	  });
+     });
+
 function TorqueConverter(source,valNum) {
   valNum = parseFloat(valNum);
 
@@ -92,7 +101,8 @@ function compRatio(form)
 <body>
 	<div class="top-fixed-div">
 		<div id="autocomplete" class="autocomplete">
-		  <input type="search" id="enginesearchbox" class="autocomplete-input" placeholder="Search for an engine" aria-label="Search for a country">
+		  <input type="search" id="enginesearchbox" class="autocomplete-input" placeholder="Search for an engine">
+		  <button id="clearButton">Clear</button> 
 <ul class="autocomplete-result-list"></ul>
 		</div>
 	</div>
