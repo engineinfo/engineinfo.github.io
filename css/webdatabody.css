@@ -116,3 +116,9 @@ a:hover
   padding: 5px;
   background-color: white;
 }
+
+.mt 
+{
+	font-style: italic;
+	color: #0b7828;
+}
